@@ -1,0 +1,219 @@
+.index-content, .about-content {
+    width: 300px;
+    /* position: absolute;
+    top: 10%;
+    left: -5%; */
+  }
+
+  span.mobile {
+    padding-top: 15px;
+    display: block;
+  }
+
+  nav {
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  label {
+    display: block;
+    height: 100px;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 30px;
+  }
+
+  .hamburger {
+    margin: 0 auto;
+    margin-top: 8px;
+    height: 9px;
+    position: relative;
+  }
+
+  .hamburger .bar {
+    padding: 0;
+    height: 2px;
+    background-color: var(--light-sky-blue);
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+  }
+
+  .bar1 {
+    top: 0;
+  }
+
+  .bar2,
+  .bar3 {
+    top: 13.5px;
+  }
+
+  .bar3 {
+    right: 0;
+  }
+
+  .bar4 {
+    bottom: 0;
+  }
+
+  nav label:hover {
+    cursor: pointer;
+    color: var(--gainsboro);
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar1 {
+    top: 13.5px;
+    background-color: transparent;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar2 {
+    left: 0px;
+    width: 30px;
+    transform: rotate(45deg);
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar3 {
+    left: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar4 {
+    background-color: transparent;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar5 {
+    bottom: 13.5px;
+    background-color: transparent;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .checkbox4:checked ~ .menu {
+    display: block;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .first-section,
+  .second-section,
+  .third-section {
+    font-size: 12px;
+    max-width: 330px;
+  }
+
+  .first-section h3,
+  .second-section h3,
+  .third-section h3 {
+      font-size: 16px;
+  }
+
+  .numbered-heading {
+      font-size: 24px;
+      width: 300px;
+      white-space: normal;
+      word-wrap: break-word;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 30px;
+    cursor: pointer;
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar1 {
+    top: 13.5px;
+    background-color: transparent;
+    z-index: 999;
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar2 {
+    left: 0px;
+    width: 30px;
+    transform: rotate(45deg);
+    z-index: 999;
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar3 {
+    left: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+    z-index: 999;
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar4 {
+    background-color: transparent;
+    z-index: 999;
+  }
+
+  .checkbox4:checked + label > .hamburger4 > .bar5 {
+    bottom: 13.5px;
+    background-color: transparent;
+    z-index: 999;
+  }
+
+  .checkbox4:checked ~ .menu {
+    background-color: #000;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+  }
+
+  .menu a, .menu a:active, .menu a:visited, .menu a:link {
+    margin-top: 50px;
+    display: block;
+    width: 70%;
+    line-height: 1.5rem;
+    cursor: pointer;
+  }
+
+  nav a.home {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  nav button {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .logo a {
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .name {
+      animation: typing 1.5s steps(60, end), blink-caret 1s step-end infinite;
+  }
