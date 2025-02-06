@@ -847,6 +847,14 @@ button.modal-button:hover {
   margin: 0 auto;
 }
 
+@media(max-width: 700px) {
+.img {
+height: 100px;
+width: auto;
+margin: 0 auto;
+}
+}
+
 .close:hover,
 .close:focus {
   color: #fff;
