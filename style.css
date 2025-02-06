@@ -624,6 +624,22 @@ EXP PAGE
   background: #302f2f url("./assets/appseeker.png") center center;
 }
 
+.reactAuth_feat {
+  width: 300px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 10px 10px 20px 10px;
+  background: #302f2f url("./assets/reactAuth.png") center center;
+}
+
+.reactCounter_feat {
+  width: 300px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 10px 10px 20px 10px;
+  background: #302f2f url("./assets/reactCounter.png") center center;
+}
+
 .asteroids_feat {
   width: 300px;
   align-items: flex-start;
@@ -632,6 +648,8 @@ EXP PAGE
   background: #302f2f url("./assets/asteroids.png") center center;
 }
 
+.reactAuth_feat,
+.reactCounter_feat,
 .ai_feat,
 .social_feat,
 .bot_feat,
