@@ -4,6 +4,7 @@
     <div class="featured">
   <?php
   include('./projects/sasha.php');
+  include('./projects/reactauth.php');
   include('./projects/reactcounter.php');
   include('./projects/social.php');
   include('./projects/hangman.php');
