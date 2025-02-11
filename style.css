@@ -255,12 +255,18 @@ header {
   margin-bottom: 15px;
   width: 100%;
   gap: 20px;
+  background-color: var(--work-card-bg);
+  padding: 10px;
+  border-radius: 4px;
 }
 
 .work-header-left {
   display: flex;
   flex-direction: column;
   flex: 1;
+  max-width: 70%;
+  padding-right: 20px;
+  border-right: 1px solid var(--work-card-border);
 }
 
 .work-header-right {
@@ -268,20 +274,22 @@ header {
   flex-direction: column;
   align-items: flex-end;
   min-width: 150px;
+  padding-left: 20px;
 }
 
 .work-title {
-  display: block;
   font-weight: 800;
   font-size: var(--fz-xl);
   color: var(--dark-sky-blue);
   margin-bottom: 5px;
+  line-height: 1.2;
 }
 
 .work-company {
   color: var(--white);
   font-size: var(--fz-lg);
   margin-bottom: 5px;
+  line-height: 1.2;
 }
 
 .work-location {
@@ -289,6 +297,7 @@ header {
   font-size: var(--fz-md);
   margin-bottom: 5px;
   text-align: right;
+  line-height: 1.2;
 }
 
 .work-date {
@@ -296,6 +305,7 @@ header {
   font-size: var(--fz-md);
   font-family: var(--font-mono);
   text-align: right;
+  line-height: 1.2;
 }
 
 .work-responsibilities {
