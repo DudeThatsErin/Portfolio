@@ -6,6 +6,11 @@
     </h2>
     
     <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+
+    <div class="contact-alternatives">
+        <p>You can also reach me directly at:</p>
+        <p><a href="mailto:erin.skidds@gmail.com">erin.skidds@gmail.com</a></p>
+    </div>
     
     <div class="contact-form">
         <?php if(!empty($response)) {?>
@@ -64,11 +69,6 @@
 
             <button type="submit" name="submit" class="contact">Send Message</button>
         </form>
-    </div>
-
-    <div class="contact-alternatives">
-        <p>You can also reach me directly at:</p>
-        <p><a href="mailto:erin.skidds@gmail.com">erin.skidds@gmail.com</a></p>
     </div>
 </div>
 
