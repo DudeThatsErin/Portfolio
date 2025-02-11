@@ -554,16 +554,19 @@ button.contact:hover {
   position: absolute;
   top: 5%;
   left: 30%;
+  z-index: 0;
 }
 
 .work-card {
-  background: var(--work-card-bg);
-  border: 1px solid var(--work-card-border);
+  background-color: rgba(48, 47, 47, 0.95);
+  border: 2px solid #6c6c6c;
   border-radius: 4px;
   padding: 25px;
   margin-bottom: 30px;
-  transition: var(--transition);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: block;
 }
 
 .work-card:hover {
@@ -572,29 +575,33 @@ button.contact:hover {
 }
 
 .work-title {
-  color: var(--work-title-color);
+  color: var(--accent-color);
   font-size: var(--fz-xl);
   font-weight: 600;
   margin-bottom: 5px;
+  display: block;
 }
 
 .work-company {
   color: var(--white);
   font-size: var(--fz-lg);
   margin-bottom: 5px;
+  display: block;
 }
 
 .work-location {
   color: var(--light-slate);
   font-size: var(--fz-md);
   margin-bottom: 10px;
+  display: block;
 }
 
 .work-date {
-  color: var(--work-date-color);
+  color: var(--light-sky-blue);
   font-size: var(--fz-md);
   font-family: var(--font-mono);
   margin-bottom: 15px;
+  display: block;
 }
 
 .work-responsibilities {
@@ -622,10 +629,12 @@ button.contact:hover {
 .work-responsibilities li a {
   color: var(--accent-color);
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .work-responsibilities li a:hover {
   color: var(--white);
+  text-decoration: underline;
 }
 
 /* Media Queries for Work Experience */
@@ -642,6 +651,7 @@ button.contact:hover {
 @media screen and (max-width: 768px) {
   .work-experience {
     padding: 15px;
+    width: 90%;
   }
 
   .work-card {
@@ -664,6 +674,7 @@ button.contact:hover {
 @media screen and (max-width: 480px) {
   .work-experience {
     padding: 10px;
+    width: 95%;
   }
 
   .work-card {
