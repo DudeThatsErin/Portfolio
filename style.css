@@ -548,7 +548,7 @@ button.contact:hover {
 
 /* Work Experience Section */
 .work-experience {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   position: absolute;
@@ -558,28 +558,28 @@ button.contact:hover {
 }
 
 .work-card {
-  background-color: rgba(48, 47, 47, 0.95);
-  border: 2px solid #6c6c6c;
-  border-radius: 4px;
-  padding: 25px;
-  margin-bottom: 30px;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
-  display: block;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 10px 10px 20px;
+  border: 2px solid #6c6c6c;
+  background-color: #302f2f;
+  box-shadow: 5px 5px 5px #6c6c6c;
+  padding: 25px;
+  opacity: 0.95;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .work-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .work-title {
-  color: var(--accent-color);
-  font-size: var(--fz-xl);
-  font-weight: 600;
-  margin-bottom: 5px;
   display: block;
+  font-weight: bold;
+  font-size: var(--fz-xl);
+  color: var(--dark-sky-blue);
+  margin-bottom: 5px;
 }
 
 .work-company {
@@ -645,6 +645,7 @@ button.contact:hover {
     left: auto;
     margin: 0 auto;
     padding: 20px;
+    width: 90%;
   }
 }
 
@@ -656,6 +657,7 @@ button.contact:hover {
 
   .work-card {
     padding: 20px;
+    margin: 10px 0 20px;
   }
 
   .work-title {
