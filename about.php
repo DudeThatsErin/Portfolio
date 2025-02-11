@@ -1,46 +1,27 @@
 <?php include('./header.php'); ?>
-
 <div class="about-content">
-    <h2 class="numbered-heading">02. About Me</h2>
-
-    <div class="first-section">
+        <h2 class="numbered-heading">
+          02. About Me
+        </h2>
         <p>
-            Hello! I'm Erin, a Full-Stack Software Engineer with a passion for creating efficient, user-friendly web applications 
-            and building helpful tools for communities. I enjoy working with both front-end and back-end technologies, and I'm 
-            constantly learning and adapting to new technologies.
+          Hello! My name is Erin and I enjoy creating interactive bots and things that live on the internet. My interest is in bots and applying language learning models to them. I started about 9 years ago by creating a discord bot for my CodingHelp discord server that I authored. I have since started teaching myself how to apply language learning models to bots that I have created for websites and discord.
         </p>
-        
         <p>
-            Fast-forward to today, I have worked at multiple companies as a Full Stack Software Engineer. I got my start in my professional career working for River &amp; Reef Aquaculture as their Full Stack Software Engineer. But also, during my time as a freelance Full Stack Engineer before River &amp; Reef, I have developed websites and applications from scratch for clients like Travel Agent 360 and more.
+          Fast-forward to today, I have worked at multiple companies as a Full Stack Software Engineer. I got my start in my professional career working for River &amp; Reef Aquaculture as their Full Stack Software Engineer. But also, during my time as a freelance Full Stack Engineer before River &amp; Reef, I have developed websites and applications from scratch for clients like Travel Agent 360 and more.
         </p>
-    </div>
-
-    <div class="skills-section">
-        <h3 class="numbered-heading">Technical Skills</h3>
-        
-        <div class="skills-grid">
-            <ul class="skill-list">
-                <li><strong>Languages:</strong> JavaScript, TypeScript, PHP, Python, HTML5, CSS3, SQL</li>
-                <li><strong>Frameworks:</strong> React, Node.js, Express.js, Laravel, WordPress</li>
-                <li><strong>Cloud & DevOps:</strong> AWS, Git, Docker, CI/CD, Linux</li>
-                <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis</li>
-            </ul>
-            
-            <ul class="skill-list">
-                <li><strong>Front-End:</strong> React, Redux, SASS/SCSS, Bootstrap, Tailwind</li>
-                <li><strong>Testing:</strong> Jest, PHPUnit, Cypress, React Testing Library</li>
-                <li><strong>Tools:</strong> VS Code, GitLab, GitHub, Jira, Notion</li>
-                <li><strong>Methodologies:</strong> Agile, Scrum, TDD, REST APIs</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="second-section">
         <p>
-            I'm currently focused on building accessible, responsive web applications and maintaining several open-source projects. 
-            I'm always interested in new opportunities to collaborate on interesting projects or contribute to meaningful causes.
+          Here are a few technologies I've been working with recently:
+          <ul class="list">
+            <li>JavaScript (Node.js, React, Angular, Vue), TypeScript (Angular)</li>
+            <li>C, C++, C#/C#.NET, Python</li>
+            <li>HTML 5/CSS 3/SCSS/SASS</li>
+            <li>CSS Animations</li>
+            <li>SQL (MySQL, MSSQL, SQLite, MongoDB, NoSQL and PostGresSQL)</li>
+            <li>WordPress &amp; WordPress Plugins</li>
+            <li>PHP (Sage/Roots and more)</li>
+            <li>Python, PyTorch, Django</li>
+            <li>AWS, EC2, CodeBuild, CodeDeploy, API Gateway, CloudWatch, CloudFront, DynamoDB</li>
+          </ul>
         </p>
-    </div>
-</div>
 
 <?php include('./footer.php'); ?>

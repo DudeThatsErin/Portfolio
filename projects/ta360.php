@@ -1,79 +1,39 @@
-<div class="project-card" data-type="work">
-    <div class="body">
-        <div class="project-type">Work Project</div>
-        <h3 class="project-title">Travel Agent 360</h3>
-        <p class="project-description">
-            A comprehensive WordPress website development and maintenance project for Travel Agent 360, involving theme customization, custom page development, and ongoing support.
-        </p>
-        <ul class="project-tech-list">
-            <li>WordPress</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-        <div class="project-links">
-            <a href="#taModal" class="modal-button" title="Learn More">
-                <i class="fas fa-external-link-alt"></i>
-            </a>
-            <a href="https://web.archive.org/web/20220322104100/https://travelagent360.us/" target="_blank" title="View on Wayback Machine">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
+      <div class="ta_feat">
+        <div class="body">
+          <span class="workTitle">Travel Agent 360</span>
+          <span class="details">Andrew Appleton (CEO and Founder) reached out to me to get his website ...</span>
+          <br /><br />
+          <button class="modal-button" href="#taModal">
+            Click here to read more...
+          </button>
         </div>
-    </div>
-</div>
+      </div>
 
-<div id="taModal" class="modal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2>Travel Agent 360</h2>
+      <div id="taModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
             <span class="close">×</span>
-        </div>
-        <div class="modal-body">
-            <img src="./assets/TA360.png" class="modal-image" alt="Travel Agent 360 Website Screenshot" />
-            
-            <div class="modal-tech-stack">
-                <h3>Technologies Used</h3>
-                <ul class="tech-list">
-                    <li>WordPress</li>
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Theme Development</li>
-                </ul>
+            <h2>Travel Agent 360</h2>
+          </div>
+          <div class="modal-body">
+            <div style="width: 100%; margin: 0 auto; text-align: center;">
+              <img src="./assets/TA360.png" class="img" />
             </div>
-
             <p>
-                A long-term development and maintenance project for Travel Agent 360, where I was brought in to:
+              Andrew Appleton (CEO and Founder) reached out to me to get his website maintained by me. I adapted the code he had to give him the website he desired. It was a unique experience that challenged me in a lot of different ways.<br />
+              His website was already running WordPress. The previous developer skipped out on him without finishing the website. I had to make the theme compatible with WordPress and build the custom pages.<br />
+              I started working with him in 2019 and am still working with him to this day. He has a few different websites I am working with him on like <a href="https://americanwarriors.com/" target="_blank">American Warriors</a>.
             </p>
-            <ul>
-                <li>Take over and complete an unfinished WordPress website</li>
-                <li>Make the existing theme fully WordPress compatible</li>
-                <li>Build and customize new pages to meet client requirements</li>
-                <li>Provide ongoing maintenance and updates</li>
-            </ul>
-            
-            <p>
-                Started in 2019, this ongoing collaboration has expanded to include other projects like 
-                <a href="https://americanwarriors.com/" target="_blank">American Warriors</a>. The project showcases my ability to:
-            </p>
-            <ul>
-                <li>Adapt and improve existing codebases</li>
-                <li>Work directly with clients to understand and meet their needs</li>
-                <li>Provide long-term website maintenance and support</li>
-                <li>Handle multiple related projects simultaneously</li>
-            </ul>
+          </div>
+          <div class="modal-footer">
+            <span class="langs"><strong>Languages Used:</strong> WordPress HTML CSS PHP JavaScript MySQL</span>
+            <br />
+            <strong>Find Travel Agent 360 here:</strong>
+            <br />
+            <span class="links" style="padding-top: 8px">
+              <a href="https://web.archive.org/web/20220322104100/https://travelagent360.us/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" title="View TA360 on the Wayback Machine! Note: Styles are broken!"></i></a>
+            </span>
+          </div>
         </div>
-        <div class="modal-footer">
-            <div class="modal-links">
-                <a href="https://web.archive.org/web/20220322104100/https://travelagent360.us/" target="_blank" title="View on Wayback Machine">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-            </div>
-            <span class="project-type">Work Project</span>
-        </div>
-    </div>
-</div>
+      </div>

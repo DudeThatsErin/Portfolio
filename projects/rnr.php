@@ -1,54 +1,38 @@
-<div class="project-card" data-type="work">
-    <div class="body">
-        <div class="project-type">Work Project</div>
-        <h3 class="project-title">River & Reef Aquaculture</h3>
-        <p class="project-description">
-            As the Chief Technical Officer (CTO), I developed e-commerce websites and created an API that communicated with different parts of the websites.
-        </p>
-        <ul class="project-tech-list">
-            <li>WordPress</li>
-            <li>C#/.NET</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-        </ul>
-        <div class="project-links">
-            <a href="#rnrModal" class="modal-button" title="Learn More">
-                <i class="fas fa-external-link-alt"></i>
-            </a>
+      <div class="rnr_feat">
+        <div class="body">
+          <span class="workTitle">River & Reef Aquaculture</span>
+          <span class="details">As the CTO, I assisted with developing...</span>
+          <br /><br />
+          <button class="modal-button" href="#rnrModal">
+            Click here to read more...
+          </button>
         </div>
-    </div>
-</div>
+      </div>
 
-<div id="rnrModal" class="modal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2>River & Reef Aquaculture</h2>
+      <div id="rnrModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
             <span class="close">×</span>
-        </div>
-        <div class="modal-body">
-            <img src="./assets/plum.png" class="modal-image" alt="River & Reef Screenshot" />
-            
-            <div class="modal-tech-stack">
-                <h3>Technologies Used</h3>
-                <ul class="tech-list">
-                    <li>WordPress</li>
-                    <li>C#/.NET</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>E-commerce</li>
-                    <li>API Development</li>
-                </ul>
+            <h2>River & Reef Aquaculture</h2>
+          </div>
+          <div class="modal-body">
+            <div style="width: 100%; margin: 0 auto; text-align: center;">
+              <img src="./assets/plum.png" class="img" />
             </div>
 
             <p>
-                As the Chief Technical Officer (CTO), I assisted with developing e-commerce websites from scratch using <a href="https://wordpress.com/" target="_blank">WordPress</a> as well as creating an API that communicated with different parts of the websites using C# (.NET). The website and business are currently shut down due to operations moving to a new location.
+              As the Chief Technical Officer (CTO), I assisted with developing e-commerce websites from scratch using <a href="https://wordpress.com/" target="_blank">WordPress</a> as well as creating an API that communicated with different parts of the websites using C# (.NET). The website is and business is currently shut down due to operations moving to a new location.
             </p>
+          </div>
+          <div class="modal-footer">
+            <span class="langs"><strong>Languages Used:</strong> WordPress C#/.NET JavaScript PHP</span>
+            <br />
+            <strong>Censored code is not uploaded for viewing.</strong>
+            <br />
+            <span class="links" style="padding-top: 8px">
+              &nbsp;
+            </span>
+          </div>
         </div>
-        <div class="modal-footer">
-            <div class="modal-links">
-                <!-- No public links available -->
-            </div>
-            <span class="project-type">Work Project</span>
-        </div>
-    </div>
-</div>
+      </div>
