@@ -1,46 +1,84 @@
-
-      <div class="bot_feat">
-        <div class="body">
-          <span class="workTitle">Sakura Moon Discord Bot</span>
-          <span class="details">A discord bot that includes a Challenge System, Suggestions System, and more... <br /><br />
-            <button class="modal-button" href="#smModal">
-              Click here to read more...
-            </button>
-          </span>
+<div class="project-card" data-type="personal">
+    <div class="body">
+        <div class="project-type">Personal Project</div>
+        <h3 class="project-title">Sakura Moon Discord Bot</h3>
+        <p class="project-description">
+            A feature-rich Discord bot built with Discord.js, featuring comprehensive systems for challenges, suggestions, points, moderation, and community engagement.
+        </p>
+        <ul class="project-tech-list">
+            <li>Node.js</li>
+            <li>Discord.js</li>
+            <li>MySQL</li>
+            <li>JavaScript</li>
+        </ul>
+        <div class="project-links">
+            <a href="#smModal" class="modal-button" title="Learn More">
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://gitlab.com/ErinSkidds/sakura-moon" target="_blank" title="View Source">
+                <i class="fa-brands fa-gitlab"></i>
+            </a>
+            <a href="https://dudethatserin.com/c2ba3760e54c43b384439012e30f15f7?v=bb0f431e8c154f8fb34cde89940ad40c" target="_blank" title="View Documentation">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </div>
-      </div>
+    </div>
+</div>
 
-      <div id="smModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <div class="modal-header">
+<div id="smModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Sakura Moon Discord Bot</h2>
             <span class="close">×</span>
-            <h2>Sakura Moon</h2>
-          </div>
-          <div class="modal-body">
-            <div style="width: 100%; margin: 0 auto; text-align: center;">
-              <img src="./assets/bot.png" class="img" />
+        </div>
+        <div class="modal-body">
+            <img src="./assets/bot.png" class="modal-image" alt="Sakura Moon Bot Logo" />
+            
+            <div class="modal-tech-stack">
+                <h3>Technologies Used</h3>
+                <ul class="tech-list">
+                    <li>Node.js</li>
+                    <li>Discord.js</li>
+                    <li>MySQL</li>
+                    <li>JavaScript</li>
+                    <li>API Integration</li>
+                    <li>Database Design</li>
+                </ul>
             </div>
 
             <p>
-              This development took me almost two years to do. It is running Discord.js which is a Node.js module that connects to
-              <a href="https://discord.com/" target="_blank" class="link">Discord</a> and allows you to create automated robots ("bots") for the platform.
+                A comprehensive Discord bot developed over two years, leveraging Discord.js and Node.js to create a feature-rich community management tool. The bot includes several integrated systems:
             </p>
+            <ul>
+                <li>Challenge System for user engagement</li>
+                <li>Suggestions System for community feedback</li>
+                <li>Thanks System for community recognition</li>
+                <li>Points System for gamification</li>
+                <li>Moderation System for community management</li>
+                <li>Entertainment commands for fun interaction</li>
+            </ul>
+            
             <p>
-              This bot has a Challenge System, Suggestions System, Thanks System, Points System, Moderation System, and some just fun
-              random commands. If you want to see everything it can do and see what each of these system are, you can read more here. You
-              can see how it is coded on it's GitLab page.
+                Key technical achievements include:
             </p>
-          </div>
-          <div class="modal-footer">
-            <span class="langs"><strong>Languages Used:</strong> Node.js <a href="https://discord.js.org/" target="_blank" title="Click here to see what Discord.js is">Discord.js</a> MySQL JavaScript</span>
-            <br />
-            <strong>Find Sakura Moon here:</strong>
-            <br />
-            <span class="links" style="padding-top: 8px">
-              <a href="https://gitlab.com/ErinSkidds/sakura-moon" target="_blank"><i class="fa-brands fa-gitlab"></i></a>
-              <a href="https://dudethatserin.com/c2ba3760e54c43b384439012e30f15f7?v=bb0f431e8c154f8fb34cde89940ad40c" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </span>
-          </div>
+            <ul>
+                <li>Complex database architecture for multiple systems</li>
+                <li>Real-time event handling and responses</li>
+                <li>Scalable command structure</li>
+                <li>Comprehensive error handling and logging</li>
+                <li>Extensive documentation and maintenance</li>
+            </ul>
         </div>
-      </div>
+        <div class="modal-footer">
+            <div class="modal-links">
+                <a href="https://gitlab.com/ErinSkidds/sakura-moon" target="_blank" title="View Source on GitLab">
+                    <i class="fa-brands fa-gitlab"></i>
+                </a>
+                <a href="https://dudethatserin.com/c2ba3760e54c43b384439012e30f15f7?v=bb0f431e8c154f8fb34cde89940ad40c" target="_blank" title="View Documentation">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            <span class="project-type">Personal Project</span>
+        </div>
+    </div>
+</div>

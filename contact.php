@@ -1,35 +1,75 @@
 <?php include('./header.php'); ?>
 <!-- START OF CONTACT PAGE -->
-<div class="about-content">
-<h2 class="numbered-heading">
-    05. Get In Touch...
-</h2>
-<p>You can contact Erin at any of the following locations, as well as filling out the form below:</p>
-<blockquote class="blockquote">
-    You can manually send Erin an email at <a href="mailto:erin.skidds@gmail.com">erin.skidds@gmail.com</a><br />
-</blockquote>
+<div class="contact-section">
+    <h2 class="numbered-heading">
+        05. Get In Touch
+    </h2>
+    
+    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+    
+    <div class="contact-form">
+        <?php if(!empty($response)) {?>
+            <div class="form-group">
+                <div class="<?php echo $response['status']; ?>">
+                    <?php echo $response['message']; ?>
+                </div>
+            </div>
+        <?php }?>
 
-  <?php include('contactform.php'); ?>
-    <!-- Error messages -->
-    <?php if(!empty($response)) {?>
-    <div class="form-group col-12 text-center">
-      <div class="error <?php echo $response['status']; ?>">
-        <?php echo $response['message']; ?>
-      </div>
+        <form action="" name="contactForm" id="contactForm" method="post" enctype="multipart/form-data" novalidate>
+            <div class="form-group">
+                <input type="text" 
+                       name="name" 
+                       id="name" 
+                       placeholder="Your Name*" 
+                       class="contact" 
+                       required 
+                       pattern="[A-Za-z ]{2,50}"
+                       title="Please enter a valid name (2-50 characters, letters only)">
+            </div>
+
+            <div class="form-group">
+                <input type="email" 
+                       name="email" 
+                       id="email" 
+                       placeholder="Your Email*" 
+                       class="contact" 
+                       required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" 
+                       name="subject" 
+                       id="subject" 
+                       placeholder="Subject*" 
+                       class="contact" 
+                       required 
+                       minlength="2" 
+                       maxlength="100">
+            </div>
+
+            <div class="form-group">
+                <textarea name="message" 
+                          id="message" 
+                          placeholder="Your Message*" 
+                          class="contact_form" 
+                          required 
+                          minlength="10" 
+                          maxlength="1000"></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="6Lf2vV0jAAAAAJOU_TPDA9db_HPJibvXPwzUmw0w"></div>
+            </div>
+
+            <button type="submit" name="submit" class="contact">Send Message</button>
+        </form>
     </div>
-    <?php }?>
 
-<form action="" name="contactForm" id="contactForm" method="post" enctype="multipart/form-data" novalidate>
-        <input type="text" name="name" id="name" placeholder="Full Name*" id="name" class="contact" required><br />
-        <input type="email" name="email" id="email" placeholder="Your Email*" id="email" class="contact" required><br />
-        <input type="text" name="subject" id="subject" placeholder="Subject*" id="subject" class="contact" required><br />
-        <textarea rows="4" name="message" id="message" placeholder="Details*" class="contact_form" required></textarea>
-        <!-- Google reCAPTCHA block -->
-        <div class="g-recaptcha" data-sitekey="6Lf2vV0jAAAAAJOU_TPDA9db_HPJibvXPwzUmw0w"></div>
-        <button type="submit" name="submit" class="contact">SEND MAIL</button>
-    </form>
-<br />
+    <div class="contact-alternatives">
+        <p>You can also reach me directly at:</p>
+        <p><a href="mailto:erin.skidds@gmail.com">erin.skidds@gmail.com</a></p>
+    </div>
+</div>
 
-<?php
-require('./footer.php');
-?>
+<?php include('./footer.php'); ?>
