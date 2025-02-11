@@ -551,6 +551,9 @@ button.contact:hover {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  position: absolute;
+  top: 5%;
+  left: 30%;
 }
 
 .work-card {
@@ -626,6 +629,16 @@ button.contact:hover {
 }
 
 /* Media Queries for Work Experience */
+@media screen and (max-width: 1200px) {
+  .work-experience {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .work-experience {
     padding: 15px;
