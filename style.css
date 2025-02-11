@@ -244,9 +244,24 @@ header {
   transform: translateY(-5px);
 }
 
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.work-header-left {
+  flex: 1;
+}
+
+.work-header-right {
+  text-align: right;
+}
+
 .work-title {
   display: block;
-  font-weight: bold;
+  font-weight: 800;
   font-size: var(--fz-xl);
   color: var(--dark-sky-blue);
   margin-bottom: 5px;
@@ -262,7 +277,7 @@ header {
 .work-location {
   color: var(--light-slate);
   font-size: var(--fz-md);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: block;
 }
 
@@ -270,7 +285,6 @@ header {
   color: var(--light-sky-blue);
   font-size: var(--fz-md);
   font-family: var(--font-mono);
-  margin-bottom: 15px;
   display: block;
 }
 
