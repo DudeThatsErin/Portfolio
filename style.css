@@ -223,19 +223,22 @@ header {
   left: 30%;
   max-width: 1000px;
   font-size: var(--fz-md);
+  z-index: 1;
 }
 
 .first-section,
 .second-section,
 .third-section {
   width: 600px;
-  margin: 1rem;
-  padding: 1rem 1rem 1.5rem 1rem;
+  margin: 10px 10px 20px;
+  padding: 20px;
   border: 2px solid #6c6c6c;
-  background: #302f2f;
-  opacity: 0.95;
+  background-color: rgba(48, 47, 47, 0.95);
   box-shadow: 5px 5px 5px #6c6c6c;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .first-section:hover,
@@ -249,6 +252,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .work-header-left {
