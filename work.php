@@ -1,9 +1,9 @@
 <?php include('./header.php'); ?>
 
-<div class="work-experience">
+<div class="work">
     <h2 class="numbered-heading">03. Where I've Worked</h2>
 
-    <div class="work-card">
+    <div class="first-section">
         <div class="work-title">Freelance Full-Stack Engineer</div>
         <div class="work-company">Self-Employed</div>
         <div class="work-location">Austin, TX</div>
@@ -17,7 +17,7 @@
         </ul>
     </div>
 
-    <div class="work-card">
+    <div class="second-section">
         <div class="work-title">Full-Stack Software Engineer</div>
         <div class="work-company">Tendering Design</div>
         <div class="work-location">Austin, TX</div>
@@ -29,7 +29,7 @@
         </ul>
     </div>
 
-    <div class="work-card">
+    <div class="third-section">
         <div class="work-title">Senior Front-End Software Engineer</div>
         <div class="work-company">Hometown Hero</div>
         <div class="work-location">Austin, TX</div>
@@ -40,7 +40,7 @@
         </ul>
     </div>
 
-    <div class="work-card">
+    <div class="first-section">
         <div class="work-title">Front-End Software Engineer</div>
         <div class="work-company">The Storage Group, Inc.</div>
         <div class="work-location">Austin, TX</div>
@@ -51,7 +51,7 @@
         </ul>
     </div>
 
-    <div class="work-card">
+    <div class="second-section">
         <div class="work-title">Full-Stack Software Engineer</div>
         <div class="work-company">Morris Consulting Services, Inc.</div>
         <div class="work-location">Tampa, FL</div>
@@ -62,7 +62,7 @@
         </ul>
     </div>
 
-    <div class="work-card">
+    <div class="third-section">
         <div class="work-title">Full-Stack Software Engineer</div>
         <div class="work-company">River & Reef Aquaculture, LLC</div>
         <div class="work-location">Tampa, FL</div>
