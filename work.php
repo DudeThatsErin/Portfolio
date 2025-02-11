@@ -11,8 +11,6 @@
       <li>Utilized C# and ASP.NET to create automated tests for websites, improving quality assurance and streamlinging development lifecycles.</li>
       <li>Designed and implemented mobile and web applications using Angular and React, delivering responsive high-performance platforms.</li>
       <li>Developed bots and AI learning algorithms for them using Python, PyTorch, JavaScript and NodeJS.</li>
-      <li></li>
-      <li></li>
   </div>
   
   <div class="second-section">
