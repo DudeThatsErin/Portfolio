@@ -30,7 +30,7 @@
             <br />
             <span class="links" style="padding-top: 8px">
                 <a href="https://erinskidds.com/reactuathstatedemo/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" title="Visit the Demo!"></i></a>
-                <a href="https://erinskidds.com/reactuathstatedemo/" target="_blank"><i class="fa-brands fa-github" title="View the Code"></i></a>
+                <a href="https://github.com/DudeThatsErin/ReactAuthState" target="_blank"><i class="fa-brands fa-github" title="View the Code"></i></a>
             </span>
         </div>
     </div>
