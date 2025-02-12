@@ -348,41 +348,85 @@ textarea.contact_form {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1700px) and (min-width: 1201px) {
+@media screen and (max-width: 1700px) {
   .index-content,
   .about-content,
   #about {
     max-width: 800px;
-    position: absolute;
-    top: 20%;
+    position: relative;
+    margin: 20% auto;
+    padding: 0 20px;
+  }
+  
+  .work {
+    position: relative;
+    left: 15%;
+    max-width: 90%;
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1199px) {
-  .work { left: 20%; }
+@media screen and (max-width: 1200px) {
+  .work { 
+    left: 10%;
+    max-width: 85%;
+  }
+  
   .first-section,
   .second-section,
-  .third-section { width: 90%; }
+  .third-section {
+    width: 90%;
+  }
+  
+  .index-content,
+  .about-content {
+    margin: 15% auto;
+  }
 }
 
-@media screen and (max-width: 1198px) and (min-width: 901px) {
-  .work { left: 15%; }
-  .first-section,
-  .second-section,
-  .third-section { width: 90%; }
-}
+@media screen and (max-width: 900px) {
+  .work {
+    left: 5%;
+    max-width: 90%;
+  }
 
-@media screen and (max-width: 900px) and (min-width: 801px) {
-  .work { left: 10%; }
-  .first-section,
-  .second-section,
-  .third-section { width: 90%; }
+  .index-content,
+  .about-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+  }
+
+  [class*="_feat"] {
+    width: 45%;
+    margin: 10px auto;
+  }
+
+  .featured {
+    justify-content: center;
+  }
 }
 
 /* Mobile Navigation Styles */
 @media screen and (max-width: 800px) {
+  /* Navigation */
   .menu {
     display: none;
+    background-color: var(--darkest-indigo-dye);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    padding: 80px 20px;
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .menu.active {
+    right: 0;
   }
 
   label {
@@ -391,30 +435,125 @@ textarea.contact_form {
     position: fixed;
     right: 20px;
     top: 20px;
+    z-index: 1000;
   }
 
   .checkbox4:checked ~ .menu {
-    display: block;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     right: 0;
-    top: 0;
-    width: 200px;
-    height: 100vh;
-    background-color: var(--darkest-indigo-dye);
-    padding: 50px;
-    z-index: 2;
   }
 
   .menu a {
     display: block;
-    padding: 10px 0;
-    text-align: right;
+    padding: 15px 0;
+    text-align: center;
+    font-size: var(--fz-lg);
+  }
+
+  /* Content */
+  .work,
+  .experience,
+  .contact-section {
+    position: relative;
+    left: 0;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .first-section,
+  .second-section,
+  .third-section {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  [class*="_feat"] {
+    width: 100%;
   }
 
   .img {
-    height: 100px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Typography */
+  .name {
+    font-size: 32px;
+  }
+
+  .hello,
+  .iam,
+  .shortabout {
+    font-size: 18px;
+  }
+
+  /* Lists */
+  .list {
+    column-count: 1;
+    padding-left: 20px;
   }
 }
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+  .work-title { 
+    font-size: var(--fz-md); 
+  }
+  
+  .work-company { 
+    font-size: var(--fz-xs); 
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .numbered-heading {
+    font-size: var(--fz-xl);
+  }
+
+  .numbered-heading::after {
+    width: 100px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .hello,
+  .iam,
+  .shortabout {
+    font-size: 16px;
+  }
+}
+
+/* Fix Hamburger Menu */
+.hamburger {
+  width: var(--hamburger-width);
+  height: var(--hamburger-width);
+  position: relative;
+  margin: 10px;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-teal);
+  position: absolute;
+  transition: var(--transition);
+}
+
+.bar1 { top: 0; }
+.bar2, .bar3 { top: 50%; }
+.bar4 { bottom: 0; }
+
+.checkbox4:checked ~ label .bar1 { transform: rotate(45deg); top: 50%; }
+.checkbox4:checked ~ label .bar2 { opacity: 0; }
+.checkbox4:checked ~ label .bar3 { opacity: 0; }
+.checkbox4:checked ~ label .bar4 { transform: rotate(-45deg); top: 50%; }
 
 /* Responsive Layout Adjustments */
 @media screen and (max-width: 689px) {
