@@ -1,5 +1,4 @@
-<?php
-      echo '<div class="reactTodo_feat">
+<div class="reactTodo_feat">
         <div class="body">
           <span class="workTitle">React To Do List App</span>
           <span class="details">A dynamic To Do List application built with React that allows...</span>
@@ -36,5 +35,4 @@
             </span>
           </div>
         </div>
-      </div>'
-?> 
+      </div>
