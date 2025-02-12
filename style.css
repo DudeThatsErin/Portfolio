@@ -660,8 +660,8 @@ textarea.contact_form {
   margin: 0;
   padding: 2rem;
   max-width: 700px;
-  position: relative;
-  top: 10%;
+  position: absolute;
+  top: 15%;
   left: 10%;
 }
 
