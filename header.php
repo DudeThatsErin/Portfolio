@@ -3,7 +3,7 @@
 
 <head>
   <title>Erin Skidds</title>
-  <link rel="stylesheet" href="style.css?v3.4444455" media="all" />
+  <link rel="stylesheet" href="style.css?v3.4444555" media="all" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8" />
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
@@ -43,7 +43,7 @@
         <a href="work.php">03. Work</a>
         <a href="experience.php">04. Projects</a>
         <a href="contact.php">05. Contact</a>
-        <a href="resume.php"><button>06. Resume</button></a>
+        <a href="resume.php"><button>Resume</button></a>
       </div>
     </nav>
   </header>

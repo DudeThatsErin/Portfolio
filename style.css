@@ -822,6 +822,7 @@ button.contact {
   display: block;
   border-radius: var(--border-radius);
   transition: var(--transition);
+  padding: 5px;
 }
 
 button.contact:hover {
