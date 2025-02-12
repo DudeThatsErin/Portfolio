@@ -669,7 +669,7 @@ textarea.contact_form {
   margin: 0;
   padding: 2rem;
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 10%;
   max-width: 1200px;
   font-size: var(--fz-xs);
