@@ -111,14 +111,14 @@ header {
 /* Navigation */
 nav {
   position: fixed;
-  top: 0;
+  top: 0.75rem;
   left: 0;
   width: 100%;
   color: var(--dark-sky-blue);
   font-size: 20px;
   z-index: 100;
   text-align: right;
-  padding: 0.5rem 2rem;
+  padding: 0 2rem;
 }
 
 .menu {
@@ -170,7 +170,7 @@ label[for="checkbox4"] {
   align-items: center;
   z-index: 1001;
   position: fixed;
-  top: 0.5rem;
+  top: 0.75rem;
   left: 1rem;
 }
 
@@ -207,10 +207,11 @@ label[for="checkbox4"] {
 
 /* Featured Projects */
 [class*="_feat"] {
-  width: 300px;
-  align-items: flex-start;
-  justify-content: flex-end;
-  margin: 10px 10px 20px;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
   border: 2px solid var(--border-color);
   background-color: var(--bg-dark);
   background-position: center;
@@ -243,9 +244,14 @@ label[for="checkbox4"] {
 .first-section, .second-section, .third-section {
   width: 600px;
   margin: var(--section-padding);
-  padding: var(--section-padding) var(--section-padding) 1.5rem;
+  padding: 2rem;
   border: 1px solid var(--border-color);
   background: var(--bg-dark);
+}
+
+.first-section ul, .second-section ul, .third-section ul {
+  margin-top: 1rem;
+  padding-left: 2rem;
 }
 
 /* Work & Experience Sections */
@@ -471,15 +477,9 @@ textarea.contact_form {
     display: block;
     position: fixed;
     right: 1.25rem;
-    top: 0.5rem;
+    top: 0.75rem;
     z-index: 1001;
     cursor: pointer;
-  }
-
-  .hamburger {
-    width: var(--hamburger-width);
-    height: var(--hamburger-width);
-    margin: 0;
   }
 
   .hamburger .bar {
@@ -490,24 +490,26 @@ textarea.contact_form {
     transition: var(--transition);
   }
 
-  .bar1 { top: 20%; }
+  .bar1 { top: 25%; }
   .bar2 { top: 50%; transform: translateY(-50%); }
   .bar3 { top: 50%; transform: translateY(-50%); }
-  .bar4 { top: 80%; }
+  .bar4 { top: 75%; }
 
   /* Hamburger Animation */
   .checkbox4:checked ~ label .bar1 { 
     transform: rotate(45deg);
     top: 50%;
+    opacity: 0;
   }
   .checkbox4:checked ~ label .bar2 { 
-    opacity: 0;
+    transform: rotate(45deg);
   }
   .checkbox4:checked ~ label .bar3 { 
     transform: rotate(-45deg);
-    top: 50%;
   }
   .checkbox4:checked ~ label .bar4 { 
+    transform: rotate(-45deg);
+    top: 50%;
     opacity: 0;
   }
 
@@ -716,8 +718,10 @@ textarea.contact_form {
 
 /* Project Cards */
 .featured {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .body {
@@ -725,6 +729,11 @@ textarea.contact_form {
   background-color: var(--bg-dark);
   opacity: 0.95;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  min-height: 200px;
 }
 
 .workTitle {
@@ -732,6 +741,8 @@ textarea.contact_form {
   font-weight: bold;
   font-size: 20px;
   color: var(--dark-sky-blue);
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .details {
@@ -769,12 +780,17 @@ textarea.contact_form {
 
 /* Buttons */
 button.modal-button {
-  margin: 0 auto 10px;
+  margin: auto auto 0.625rem;
   text-align: center;
   border-radius: 50px;
   border: 1px solid var(--celadon-blue);
   background-color: transparent;
   color: var(--white);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 2rem);
 }
 
 button.modal-button:hover {
@@ -883,5 +899,41 @@ blockquote {
   
   .list {
     column-count: 1;
+  }
+}
+
+/* Featured Projects Responsive */
+@media screen and (max-width: 1080px) {
+  .featured {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .workTitle {
+    font-size: 18px;
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .featured {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Content Width Adjustments */
+@media screen and (max-width: 1300px) {
+  .about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-content {
+    max-width: 100%;
+    padding: 1rem;
   }
 }
