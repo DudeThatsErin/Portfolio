@@ -923,7 +923,7 @@ blockquote {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 965px) {
   .featured {
     grid-template-columns: 1fr;
   }
