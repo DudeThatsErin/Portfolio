@@ -3,7 +3,7 @@
 
 <head>
   <title>Erin Skidds</title>
-  <link rel="stylesheet" href="style.css?v3.4444445" media="all" />
+  <link rel="stylesheet" href="style.css?v3.4444455" media="all" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8" />
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
@@ -43,12 +43,11 @@
         <a href="work.php">03. Work</a>
         <a href="experience.php">04. Projects</a>
         <a href="contact.php">05. Contact</a>
-        <a href="Erin_Skidds.pdf?v1.3" target="_blank"><button>Resume</button></a>
+        <a href="resume.php"><button>06. Resume</button></a>
       </div>
     </nav>
   </header>
   <div class="left-sidebar">
-
     <div class="bottom">
       <a href="https://github.com/DudeThatsErin" target="_blank">
         <i class="fa-brands fa-github"></i>
