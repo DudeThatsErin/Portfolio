@@ -3,7 +3,7 @@
 
 <head>
   <title>Erin Skidds</title>
-  <link rel="stylesheet" href="style.css?v3.11111" media="all" />
+  <link rel="stylesheet" href="style.css?v3.111111" media="all" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8" />
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
