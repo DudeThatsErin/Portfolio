@@ -2,16 +2,16 @@
 <div class="about-content">
   <h2 class="numbered-heading">06. Resume</h2>
   <div class="resume-container">
-    <object
-      data="Erin_Skidds.pdf"
-      type="application/pdf"
+    <iframe
+      src="Erin_Skidds.pdf#view=FitH"
       width="100%"
       height="800px"
-      style="border: none;">
-      <p>It appears you don't have a PDF plugin for this browser.
+      style="border: none;"
+      title="Resume">
+      <p>Your browser does not support iframes.
         You can <a href="Erin_Skidds.pdf">click here to download the PDF file.</a>
       </p>
-    </object>
+    </iframe>
   </div>
 </div>
 
