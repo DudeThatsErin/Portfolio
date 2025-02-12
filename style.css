@@ -899,9 +899,9 @@ blockquote {
   
   .about-content {
     padding: 10px;
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 10%;
+    left: 5%;
   }
   
   .index-content {
@@ -942,5 +942,6 @@ blockquote {
   .about-content {
     max-width: 100%;
     padding: 3rem;
+    top: 25%;
   }
 }
