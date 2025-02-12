@@ -746,3 +746,302 @@ textarea.contact_form {
   max-width: 1000px;
   font-size: var(--fz-md);
 }
+
+/* Media Queries */
+
+/* Large Desktop (1201px - 1700px) */
+@media screen and (max-width: 1700px) and (min-width: 1201px) {
+  .index-content,
+  .about-content, #about {
+    vertical-align: middle;
+    padding: 0px;
+    max-width: 800px;
+    position: absolute;
+    top: 20%;
+  }
+
+  .about-content {
+    font-size: var(--fz-xs)
+  }
+
+  .right-sidebar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform-origin: 0 0;
+    width: 5px;
+    height: 360px;
+    font-size: 28px;
+    color: #83d4c5;
+    transform: rotate(90deg);
+  }
+
+  button.contact {
+    border: 2px solid #83d4c5;
+    color: #83d4c5;
+    background-color: transparent;
+    font-size: 20px;
+    display: block;
+    border-radius: 5px;
+  }
+
+  button.contact:hover {
+    background-color: #83d4c5;
+    color: #fff;
+    border: 2px solid #83d4c5;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+
+/* Desktop (1199px - 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 1199px) {
+  .work { left: 20%; }
+  .first-section, .second-section, .third-section {
+    width: 90%;
+  }
+}
+
+/* Small Desktop (901px - 1198px) */
+@media screen and (max-width: 1198px) and (min-width: 901px) {
+  .work { left: 15%; }
+  .first-section, .second-section, .third-section {
+    width: 90%;
+  }
+}
+
+/* Tablet Landscape (801px - 900px) */
+@media screen and (max-width: 900px) and (min-width: 801px) {
+  .work { left: 10%; }
+  .first-section, .second-section, .third-section {
+    width: 90%;
+  }
+}
+
+/* Tablet Portrait (701px - 800px) */
+@media screen and (max-width: 800px) and (min-width: 701px) {
+  .work { left: 5%; }
+  .first-section, .second-section, .third-section {
+    width: 90%;
+  }
+  .menu {
+    display: none;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .checkbox4:checked ~ .menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--darkest-indigo-dye);
+    padding: 50px;
+    z-index: 2;
+  }
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    text-align: right;
+  }
+}
+
+/* Small Tablet (690px - 700px) */
+@media screen and (max-width: 700px) and (min-width: 690px) {
+  .work { left: 2%; }
+  .first-section, .second-section, .third-section {
+    width: 95%;
+  }
+  .menu {
+    display: none;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .checkbox4:checked ~ .menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--darkest-indigo-dye);
+    padding: 50px;
+    z-index: 2;
+  }
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    text-align: right;
+  }
+}
+
+/* Large Mobile (535px - 689px) */
+@media screen and (max-width: 689px) and (min-width: 535px) {
+  .work {
+    position: relative;
+    left: 0;
+  }
+  .first-section, .second-section, .third-section {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .menu {
+    display: none;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .checkbox4:checked ~ .menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--darkest-indigo-dye);
+    padding: 50px;
+    z-index: 2;
+  }
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    text-align: right;
+  }
+}
+
+/* Mobile (250px - 479px) */
+@media screen and (max-width: 479px) and (min-width: 250px) {
+  .work {
+    position: relative;
+    left: 0;
+    padding: 10px;
+  }
+  .first-section, .second-section, .third-section {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 10px;
+  }
+  .work-title { font-size: var(--fz-md); }
+  .work-company { font-size: var(--fz-xs); }
+  .menu {
+    display: none;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .checkbox4:checked ~ .menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--darkest-indigo-dye);
+    padding: 50px;
+    z-index: 2;
+  }
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    text-align: right;
+  }
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 285px) and (min-width: 275px) {
+  .work {
+    position: relative;
+    left: 0;
+    padding: 5px;
+  }
+  .first-section, .second-section, .third-section {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 5px;
+  }
+  .menu {
+    display: none;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .checkbox4:checked ~ .menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--darkest-indigo-dye);
+    padding: 50px;
+    z-index: 2;
+  }
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    text-align: right;
+  }
+}
+
+/* iPhone and High DPI Devices */
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 800px) {
+  .work {
+    position: relative;
+    left: 0;
+  }
+  .first-section, .second-section, .third-section {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .work-title { font-size: var(--fz-lg); }
+  .work-company { font-size: var(--fz-md); }
+  .menu {
+    display: none;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .checkbox4:checked ~ .menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--darkest-indigo-dye);
+    padding: 50px;
+    z-index: 2;
+  }
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    text-align: right;
+  }
+}
