@@ -88,11 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Common Featured Project Styles */
-.ai_feat, .social_feat, .hangman_feat, .bot_feat, .ch_feat, .fa_feat,
-.rnr_feat, .ta_feat, .as_feat, .ed_feat, .punch_feat, .csharp_feat,
-.csharpbot_feat, .python_feat, .pythonBot_feat, .dtm_feat, .hw_feat,
-.enth_feat, .la_feat, .dte_feat, .appseeker_feat, .reactAuth_feat,
-.reactCounter_feat, .asteroids_feat, .reactTodo_feat {
+[class*="_feat"] {
   width: 300px;
   align-items: flex-start;
   justify-content: flex-end;
