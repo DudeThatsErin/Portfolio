@@ -1002,3 +1002,19 @@ blockquote {
     text-align: center;
   }
 }
+
+/* Resume Styles */
+.resume-container {
+  width: 100%;
+  background: var(--bg-dark);
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .resume-container object {
+    height: 500px;
+  }
+}
