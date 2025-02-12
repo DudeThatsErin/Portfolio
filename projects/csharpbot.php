@@ -1,4 +1,4 @@
-    <div class="csharpbot_feat">
+    <div class="csharpbot_feat" data-project-type="personal">
       <div class="body">
         <span class="workTitle">C# Discord Bot</span>
         <span class="details">This is a Discord bot I created in C# using Discord.net...</span>

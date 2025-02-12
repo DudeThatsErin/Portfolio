@@ -1,4 +1,4 @@
-<div class="fa_feat">
+<div class="fa_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Forever Angel</span>
         <span class="details">This is a blog and website collective that I ran back in 2009 &amp; 2010...</span><br /><br />

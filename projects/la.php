@@ -1,4 +1,4 @@
-<div class="la_feat">
+<div class="la_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Listing Admin</span>
         <span class="details">Listing Admin is a PHP Script used for managing <a href="https://thefanlistings.org/" target="_blank" title="Click here to learn what a fanlisting is!">Fanlistings</a>...</span><br /><br />

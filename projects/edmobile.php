@@ -1,4 +1,4 @@
-      <div class="ed_feat">
+      <div class="ed_feat" data-project-type="work">
         <div class="body">
           <span class="workTitle">Airline Company Mobile App</span>
           <span class="details">I assisted with updating the existing iOS &amp; Android application...</span>

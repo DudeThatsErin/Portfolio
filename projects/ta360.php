@@ -1,4 +1,4 @@
-      <div class="ta_feat">
+      <div class="ta_feat" data-project-type="work">
         <div class="body">
           <span class="workTitle">Travel Agent 360</span>
           <span class="details">Andrew Appleton (CEO and Founder) reached out to me to get his website ...</span>

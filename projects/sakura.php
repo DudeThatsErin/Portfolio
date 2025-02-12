@@ -1,5 +1,5 @@
 
-      <div class="bot_feat">
+      <div class="bot_feat" data-project-type="personal">
         <div class="body">
           <span class="workTitle">Sakura Moon Discord Bot</span>
           <span class="details">A discord bot that includes a Challenge System, Suggestions System, and more... <br /><br />

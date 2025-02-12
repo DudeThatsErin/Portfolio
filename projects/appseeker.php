@@ -1,4 +1,4 @@
-<div class="appseeker_feat">
+<div class="appseeker_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">App Seeker</span>
         <span class="details">This is a website created using <a href="https://notion.so" title="Click here to learn about Notion" target="_blank">Notion</a>, <a href="https://cloudflare.com" target="_blank">CloudFlare</a> and <a href="https://github.com/velsa/notehost" target="_blank">NoteHost</a> where...</span><br /><br />

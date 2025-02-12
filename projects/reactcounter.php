@@ -1,4 +1,4 @@
-<div class="reactCounter_feat">
+<div class="reactCounter_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Demo React Counter</span>
         <span class="details">This project is a simple counter app developed using React and React Native Web, which allows users to...</span><br /><br />

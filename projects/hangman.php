@@ -1,4 +1,4 @@
-<div class="hangman_feat">
+<div class="hangman_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Hangman</span>
         <span class="details">This is a game I created in Python to test my knowledge of Python.</span><br /><br />

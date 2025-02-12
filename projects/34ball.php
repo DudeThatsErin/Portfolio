@@ -1,4 +1,4 @@
-      <div class="as_feat">
+      <div class="as_feat" data-project-type="work">
         <div class="body">
           <span class="workTitle">3 & 4-Ball Backend Pages for Client Company</span>
           <span class="details">I migrated both of these pages from WordPress to

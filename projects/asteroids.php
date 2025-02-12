@@ -1,4 +1,4 @@
-<div class="asteroids_feat">
+<div class="asteroids_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Asteroids</span>
         <span class="details">This is a game I created in C++ to expand my knowledge of C++ and C.</span><br /><br />

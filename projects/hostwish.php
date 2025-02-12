@@ -1,4 +1,4 @@
-<div class="hw_feat">
+<div class="hw_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Hostwish Hosting</span>
         <span class="details">When I first got into programming websites, I was really interested in helping other people...</span><br /><br />

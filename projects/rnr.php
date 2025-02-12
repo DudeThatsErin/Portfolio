@@ -1,4 +1,4 @@
-      <div class="rnr_feat">
+      <div class="rnr_feat" data-project-type="work">
         <div class="body">
           <span class="workTitle">River & Reef Aquaculture</span>
           <span class="details">As the CTO, I assisted with developing...</span>

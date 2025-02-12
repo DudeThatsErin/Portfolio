@@ -1,4 +1,4 @@
-   <div class="pythonBot_feat">
+   <div class="pythonBot_feat" data-project-type="personal">
       <div class="body">
         <span class="workTitle">Discord.py Bot</span>
         <span class="details">This is a Discord bot I created in Python using Discord.py...</span>

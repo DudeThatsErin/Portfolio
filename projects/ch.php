@@ -1,4 +1,4 @@
-      <div class="ch_feat">
+      <div class="ch_feat" data-project-type="personal">
         <div class="body">
           <span class="workTitle">r/CodingHelp</span>
           <span class="details">I am the founder of CodingHelp, a community dedicated to helping new people learn how to code...</span>

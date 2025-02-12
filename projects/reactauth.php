@@ -1,4 +1,4 @@
-<div class="reactAuth_feat">
+<div class="reactAuth_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">React Auth State Demo</span>
         <span class="details">This project is a simple <strong>authentication system</strong> built using...</span><br /><br />

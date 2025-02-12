@@ -1,4 +1,4 @@
-      <div class="punch_feat">
+      <div class="punch_feat" data-project-type="work">
         <div class="body">
           <span class="workTitle">Mobile App for Cleaning Companies</span>
           <span class="details">This is a website, mobile app, and desktop application...</span>

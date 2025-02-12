@@ -1,4 +1,4 @@
-      <div class="csharp_feat">
+      <div class="csharp_feat" data-project-type="personal">
         <div class="body">
           <span class="workTitle">C# Mini-Games</span>
           <span class="details">While attempting to teach myself C#/C#.net I created several ...</span>

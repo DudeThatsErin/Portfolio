@@ -957,3 +957,47 @@ blockquote {
     top: 0%;
   }
 }
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.filter-btn {
+  background-color: transparent;
+  border: 2px solid var(--accent-teal);
+  color: var(--accent-teal);
+  font-size: 20px;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--accent-teal);
+  color: var(--white);
+}
+
+/* Hide filtered projects */
+[data-project-type].hidden {
+  display: none;
+}
+
+/* Responsive Filter Buttons */
+@media screen and (max-width: 800px) {
+  .filter-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,4 +1,4 @@
-<div class="dte_feat">
+<div class="dte_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Dude, That's Erin's Blog</span>
         <span class="details">This is a <a href="https://wordpress.com/" target="_blank">WordPress</a> website...</span><br /><br />

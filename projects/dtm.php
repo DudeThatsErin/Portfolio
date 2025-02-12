@@ -1,4 +1,4 @@
-<div class="dtm_feat">
+<div class="dtm_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Dude, That's Me!</span>
         <span class="details">This is a website where users can sign up to pose as celebrities to share their...</span><br /><br />

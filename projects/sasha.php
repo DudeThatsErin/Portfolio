@@ -1,4 +1,4 @@
-<div class="ai_feat">
+<div class="ai_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Sasha AI</span>
         <span class="details">This is an <strong>in progress</strong> AI I am creating using <a href="pytortch.org" target="_blank">PyTorch</a>...</span><br /><br />

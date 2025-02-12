@@ -1,6 +1,11 @@
 <?php include('./header.php'); ?>
 <div class="about-content">
   <h2 class="numbered-heading">04. Some Things I've Built &amp; Worked On</h2>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="work">Work Projects</button>
+    <button class="filter-btn" data-filter="personal">Personal Projects</button>
+  </div>
     <div class="featured">
   <?php
   include('./projects/sasha.php');
@@ -29,5 +34,31 @@
   include('./projects/hostwish.php');
   ?>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projects = document.querySelectorAll('[data-project-type]');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+
+        const filterValue = button.getAttribute('data-filter');
+
+        projects.forEach(project => {
+          if (filterValue === 'all' || project.getAttribute('data-project-type') === filterValue) {
+            project.classList.remove('hidden');
+          } else {
+            project.classList.add('hidden');
+          }
+        });
+      });
+    });
+  });
+</script>
 
 <?php include('./footer.php'); ?>

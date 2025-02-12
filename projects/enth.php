@@ -1,4 +1,4 @@
-<div class="enth_feat">
+<div class="enth_feat" data-project-type="personal">
     <div class="body">
         <span class="workTitle">Enthusiast</span>
         <span class="details">Enthuiast is a PHP Script used for managing <a href="https://thefanlistings.org/" target="_blank" title="Click here to learn what a fanlisting is!">Fanlistings</a>...</span><br /><br />
