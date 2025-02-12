@@ -111,14 +111,14 @@ header {
 /* Navigation */
 nav {
   position: fixed;
-  top: 1.25rem; /* 20px equivalent */
+  top: 0;
   left: 0;
   width: 100%;
   color: var(--dark-sky-blue);
   font-size: 20px;
   z-index: 100;
   text-align: right;
-  padding-right: 2rem;
+  padding: 1rem 2rem;
 }
 
 .menu {
@@ -163,15 +163,16 @@ label[for="checkbox4"] {
 .logo {
   display: flex;
   align-items: flex-start;
-  z-index: 4;
+  z-index: 1001;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
 }
 
 .logo a {
-  margin: 5px 0 0 5px;
   color: var(--accent-teal);
   font-size: 20px;
   font-weight: bold;
-  width: 50px;
 }
 
 /* Sidebar */
@@ -425,25 +426,18 @@ textarea.contact_form {
 /* Mobile Navigation Styles */
 @media screen and (max-width: 800px) {
   nav {
-    position: fixed;
-    top: 0;
-    left: 0.3125rem; /* 5px equivalent */
-    width: auto;
-    font-size: 1.25rem; /* 20px equivalent */
-    padding: 1rem;
-    text-align: left;
+    padding: 0;
   }
 
   .menu {
     display: none;
-    background-color: var(--darkest-indigo-dye);
+    background-color: rgba(0, 0, 0, 1);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    padding: 5rem 0 2rem 0.3125rem; /* Added left padding of 5px */
-    transition: 0.3s;
+    padding: 4rem 0 2rem 1.25rem;
     z-index: 99;
     flex-direction: column;
     align-items: flex-start;
@@ -454,23 +448,62 @@ textarea.contact_form {
   }
 
   .menu a {
-    font-size: 1.25rem; /* 20px equivalent */
+    font-size: 1.25rem;
     margin: 0.5rem 0;
-    padding-left: 0.3125rem; /* 5px equivalent */
+    color: var(--accent-teal);
+    text-align: left;
+    width: 100%;
   }
 
   nav button {
-    font-size: 1.25rem; /* 20px equivalent */
+    font-size: 1.25rem;
+    margin-top: 1rem;
   }
 
-  /* Show hamburger menu on mobile */
-  .hamburger,
-  label[for="checkbox4"] {
-    display: block;
+  /* Hamburger Menu */
+  .hamburger {
+    width: var(--hamburger-width);
+    height: var(--hamburger-width);
     position: fixed;
-    right: 1.25rem; /* 20px equivalent */
-    top: 1.25rem; /* 20px equivalent */
-    z-index: 1000;
+    right: 1.25rem;
+    top: 1.25rem;
+    z-index: 1001;
+    margin: 0;
+  }
+
+  .hamburger .bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-teal);
+    position: absolute;
+    transition: var(--transition);
+  }
+
+  .bar1 { top: 20%; }
+  .bar2 { top: 50%; }
+  .bar3 { top: 50%; }
+  .bar4 { top: 80%; }
+
+  /* Hamburger Animation */
+  .checkbox4:checked ~ label .bar1 { 
+    transform: rotate(45deg); 
+    top: 50%;
+    opacity: 0;
+  }
+  .checkbox4:checked ~ label .bar2 { 
+    transform: rotate(45deg);
+  }
+  .checkbox4:checked ~ label .bar3 { 
+    transform: rotate(-45deg);
+  }
+  .checkbox4:checked ~ label .bar4 { 
+    transform: rotate(-45deg); 
+    top: 50%;
+  }
+
+  /* Show Menu when Checked */
+  .checkbox4:checked ~ .menu {
+    display: flex;
   }
 
   /* Content */
