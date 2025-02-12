@@ -123,11 +123,11 @@ nav {
 
 .menu {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
   width: 100%;
-  height: auto;
-  padding: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 .menu li {
@@ -162,7 +162,7 @@ label[for="checkbox4"] {
 /* Logo */
 .logo {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   z-index: 1001;
   position: fixed;
   top: 1rem;
@@ -431,7 +431,7 @@ textarea.contact_form {
 
   .menu {
     display: none;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -443,8 +443,8 @@ textarea.contact_form {
     align-items: flex-start;
   }
 
-  .menu.active {
-    display: flex;
+  .checkbox4:checked ~ .menu {
+    display: flex !important;
   }
 
   .menu a {
@@ -460,14 +460,20 @@ textarea.contact_form {
     margin-top: 1rem;
   }
 
-  /* Hamburger Menu */
+  /* Show hamburger menu on mobile */
+  .hamburger,
+  label[for="checkbox4"] {
+    display: block;
+    position: fixed;
+    right: 1.25rem;
+    top: 1rem;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
   .hamburger {
     width: var(--hamburger-width);
     height: var(--hamburger-width);
-    position: fixed;
-    right: 1.25rem;
-    top: 1.25rem;
-    z-index: 1001;
     margin: 0;
   }
 
@@ -479,15 +485,13 @@ textarea.contact_form {
     transition: var(--transition);
   }
 
-  .bar1 { top: 20%; }
+  .bar1 { top: 25%; }
   .bar2 { top: 50%; }
   .bar3 { top: 50%; }
-  .bar4 { top: 80%; }
+  .bar4 { top: 75%; }
 
   /* Hamburger Animation */
   .checkbox4:checked ~ label .bar1 { 
-    transform: rotate(45deg); 
-    top: 50%;
     opacity: 0;
   }
   .checkbox4:checked ~ label .bar2 { 
@@ -497,13 +501,7 @@ textarea.contact_form {
     transform: rotate(-45deg);
   }
   .checkbox4:checked ~ label .bar4 { 
-    transform: rotate(-45deg); 
-    top: 50%;
-  }
-
-  /* Show Menu when Checked */
-  .checkbox4:checked ~ .menu {
-    display: flex;
+    opacity: 0;
   }
 
   /* Content */
