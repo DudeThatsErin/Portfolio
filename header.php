@@ -3,7 +3,7 @@
 
 <head>
   <title>Erin Skidds</title>
-  <link rel="stylesheet" href="style.css?v2.96" media="all" />
+  <link rel="stylesheet" href="style.css?v2.98" media="all" />
   <link rel="stylesheet" href="1480.css?v1" media="screen and (max-width: 1700px) and (min-width: 1201px)" />
   <link rel="stylesheet" href="1200.css?v1" media="screen and (max-width: 1200px) and (min-width: 1199px)" />
   <link rel="stylesheet" href="1050.css?v1.3" media="screen and (max-width: 1198px) and (min-width: 901px)" />
