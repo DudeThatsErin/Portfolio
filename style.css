@@ -674,7 +674,7 @@ textarea.contact_form {
   left: 10%;
   width: 100%;
   max-width: 1200px;
-  font-size: var(--fz-xs);
+  font-size: var(--fz-md);
 }
 
 /* Typography Elements */
