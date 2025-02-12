@@ -326,7 +326,8 @@ label[for="checkbox4"] {
   margin: 10px 0 40px;
   width: 100%;
   font-size: clamp(26px, 5vw, var(--fz-heading));
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .numbered-heading::after {
@@ -337,6 +338,7 @@ label[for="checkbox4"] {
   width: 280px;
   height: 1px;
   margin-left: 20px;
+  flex-shrink: 0;
   background-color: var(--light-sky-blue);
 }
 
@@ -432,6 +434,21 @@ textarea.contact_form {
   .featured {
     justify-content: center;
   }
+
+  .numbered-heading {
+    font-size: 24px;
+  }
+  
+  .numbered-heading::after {
+    width: 100px;
+  }
+  
+  .workTitle {
+    font-size: 18px;
+    padding: 0 0.5rem;
+    white-space: normal;
+    word-wrap: break-word;
+  }
 }
 
 /* Mobile Navigation Styles */
@@ -487,29 +504,27 @@ textarea.contact_form {
     height: 2px;
     background-color: var(--accent-teal);
     position: absolute;
-    transition: var(--transition);
+    transition: all 0.3s ease-in-out;
   }
 
-  .bar1 { top: 25%; }
+  .bar1 { top: 20%; }
   .bar2 { top: 50%; transform: translateY(-50%); }
   .bar3 { top: 50%; transform: translateY(-50%); }
-  .bar4 { top: 75%; }
+  .bar4 { top: 80%; }
 
   /* Hamburger Animation */
-  .checkbox4:checked ~ label .bar1 { 
-    transform: rotate(45deg);
-    top: 50%;
+  .checkbox4:checked ~ label .bar1 {
     opacity: 0;
   }
-  .checkbox4:checked ~ label .bar2 { 
+  .checkbox4:checked ~ label .bar2 {
     transform: rotate(45deg);
+    top: 50%;
   }
-  .checkbox4:checked ~ label .bar3 { 
-    transform: rotate(-45deg);
-  }
-  .checkbox4:checked ~ label .bar4 { 
+  .checkbox4:checked ~ label .bar3 {
     transform: rotate(-45deg);
     top: 50%;
+  }
+  .checkbox4:checked ~ label .bar4 {
     opacity: 0;
   }
 
@@ -604,17 +619,8 @@ textarea.contact_form {
   height: 2px;
   background-color: var(--accent-teal);
   position: absolute;
-  transition: var(--transition);
+  transition: all 0.3s ease-in-out;
 }
-
-.bar1 { top: 0; }
-.bar2, .bar3 { top: 50%; }
-.bar4 { bottom: 0; }
-
-.checkbox4:checked ~ label .bar1 { transform: rotate(45deg); top: 50%; }
-.checkbox4:checked ~ label .bar2 { opacity: 0; }
-.checkbox4:checked ~ label .bar3 { opacity: 0; }
-.checkbox4:checked ~ label .bar4 { transform: rotate(-45deg); top: 50%; }
 
 /* Responsive Layout Adjustments */
 @media screen and (max-width: 689px) {
@@ -906,13 +912,6 @@ blockquote {
 @media screen and (max-width: 1080px) {
   .featured {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .workTitle {
-    font-size: 18px;
-    padding: 0 0.5rem;
   }
 }
 
