@@ -384,7 +384,7 @@ textarea.contact_form {
   .about-content,
   #about {
     max-width: 800px;
-    position: relative;
+    position: absolute;
     margin: 20% auto;
     padding: 0 20px;
   }
@@ -422,7 +422,7 @@ textarea.contact_form {
 
   .index-content,
   .about-content {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     margin: 10% auto;
@@ -668,8 +668,8 @@ textarea.contact_form {
 .about-content {
   margin: 0;
   padding: 2rem;
-  position: relative;
-  top: 6%;
+  position: absolute;
+  top: 15%;
   left: 10%;
   max-width: 1200px;
   font-size: var(--fz-xs);
