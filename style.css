@@ -159,7 +159,7 @@ nav button {
 
 nav button:hover {
   background-color: var(--accent-teal);
-  color: var(--white);
+  color: var(--black);
 }
 
 /* Hide hamburger menu on desktop */
@@ -809,7 +809,8 @@ button.modal-button {
 
 button.modal-button:hover {
   cursor: pointer;
-  background-color: var(--black);
+  background-color: var(--accent-teal);
+  color: var(--black);
 }
 
 button.contact {
@@ -824,7 +825,7 @@ button.contact {
 
 button.contact:hover {
   background-color: var(--accent-teal);
-  color: var(--white);
+  color: var(--black);
   cursor: pointer;
 }
 
@@ -981,7 +982,7 @@ blockquote {
 .filter-btn:hover,
 .filter-btn.active {
   background-color: var(--accent-teal);
-  color: var(--white);
+  color: var(--black);
 }
 
 /* Hide filtered projects */
