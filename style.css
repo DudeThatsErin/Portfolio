@@ -933,7 +933,8 @@ blockquote {
 @media screen and (max-width: 1300px) {
   .about-content {
     max-width: 900px;
-    padding: 2rem;
+    padding: 3rem;
+    left: 5%;
   }
 }
 
