@@ -93,8 +93,9 @@ a {
 }
 
 a:hover {
-  color: var(--white);
+  color: var(--black);
   text-decoration: underline;
+  text-decoration-color: var(--black);
 }
 
 .link a {
