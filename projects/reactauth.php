@@ -20,7 +20,7 @@
                 <img src="./assets/reactAuth.png" class="img" />
             </div>
             <p>
-                This project is a simple <strong>authentication system</strong> built using <strong>React</strong> and <strong>SQLite</strong>, designed to handle user registration, login, and profile management. The app stores user credentials securely and handles session management for authenticated users. It is built to work on both **web and mobile platforms** using **React Native Web**.
+                This project is a simple <strong>authentication system</strong> built using <strong>React</strong> and <strong>SQLite</strong>, designed to handle user registration, login, and profile management. The app stores user credentials securely and handles session management for authenticated users. It is built to work on both <strong>web and mobile platforms</strong> using  <strong>React Native Web</strong>.
             </p>
         </div>
         <div class="modal-footer">
