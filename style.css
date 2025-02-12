@@ -118,7 +118,7 @@ nav {
   font-size: 20px;
   z-index: 100;
   text-align: right;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .menu {
@@ -153,6 +153,11 @@ nav button {
   cursor: pointer;
 }
 
+nav button:hover {
+  background-color: var(--accent-teal);
+  color: var(--white);
+}
+
 /* Hide hamburger menu on desktop */
 .hamburger,
 label[for="checkbox4"] {
@@ -165,7 +170,7 @@ label[for="checkbox4"] {
   align-items: center;
   z-index: 1001;
   position: fixed;
-  top: 1rem;
+  top: 0.5rem;
   left: 1rem;
 }
 
@@ -424,7 +429,7 @@ textarea.contact_form {
 }
 
 /* Mobile Navigation Styles */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   nav {
     padding: 0;
   }
@@ -466,7 +471,7 @@ textarea.contact_form {
     display: block;
     position: fixed;
     right: 1.25rem;
-    top: 1rem;
+    top: 0.5rem;
     z-index: 1001;
     cursor: pointer;
   }
@@ -485,20 +490,22 @@ textarea.contact_form {
     transition: var(--transition);
   }
 
-  .bar1 { top: 25%; }
-  .bar2 { top: 50%; }
-  .bar3 { top: 50%; }
-  .bar4 { top: 75%; }
+  .bar1 { top: 20%; }
+  .bar2 { top: 50%; transform: translateY(-50%); }
+  .bar3 { top: 50%; transform: translateY(-50%); }
+  .bar4 { top: 80%; }
 
   /* Hamburger Animation */
   .checkbox4:checked ~ label .bar1 { 
-    opacity: 0;
+    transform: rotate(45deg);
+    top: 50%;
   }
   .checkbox4:checked ~ label .bar2 { 
-    transform: rotate(45deg);
+    opacity: 0;
   }
   .checkbox4:checked ~ label .bar3 { 
     transform: rotate(-45deg);
+    top: 50%;
   }
   .checkbox4:checked ~ label .bar4 { 
     opacity: 0;
