@@ -2,6 +2,24 @@
 <div class="about-content">
   <h2 class="numbered-heading">03. Where I've Worked</h2>
   
+  <div class="second-section">
+    <h3>Front End Software Engineer</h3>
+    <span class="date">2024 - Present</span>
+    <ul>
+      <li>
+        <strong>Co-architected Payactiv’s monorepo React Native + Next.js app</strong> from the ground up, delivering a scalable and maintainable foundation using Radix and Base Web component libraries.
+      </li>
+      <li>
+        <strong>Primary stakeholder for iOS build management</strong>, leveraging Expo and EAS to ensure consistent mobile app delivery and streamlined App Store deployment processes.
+      </li>
+      <li>
+        <strong>Established front-end workflows and documentation standards</strong> utilizing Azure DevOps, Confluence, and Notion, significantly improving cross-team collaboration and onboarding speed.
+      </li>
+      <li>
+        <strong>Engineered a modular, high-performance codebase</strong> that reduced technical debt and enabled faster, more reliable feature releases across web and mobile platforms.
+      </li>
+    </ul>
+  </div>
 
  <div class="second-section">
     <h3>Freelance Full-Stack Developer</h3>
