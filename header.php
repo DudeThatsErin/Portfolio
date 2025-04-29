@@ -3,7 +3,7 @@
 
 <head>
   <title>Erin Skidds</title>
-  <link rel="stylesheet" href="style.css?v3.4555555" media="all" />
+  <link rel="stylesheet" href="style.css?v3.5555555" media="all" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8" />
   <meta name="description" content="Erin Skidds - Full-Stack Engineer specializing in front-end and back-end development, bot development, and language learning models">
