@@ -1,23 +1,23 @@
 <div class="dte_feat" data-project-type="personal">
     <div class="body">
-        <span class="workTitle">Dude, That's Erin's Blog</span>
-        <span class="details">This is a <a href="https://wordpress.com/" target="_blank">WordPress</a> website...</span><br /><br />
-        <button class="modal-button" href="#dteModal">
+        <h3 class="workTitle">Dude, That's Erin's Blog</h3>
+        <p class="details">This is a <a href="https://wordpress.com/" target="_blank">WordPress</a> website...</p>
+        <button class="modal-button" href="#dteModal" aria-haspopup="dialog" aria-label="Read more about Dude, That's Erin's Blog project">
             Click here to read more...
         </button>
     </div>
 </div>
 
-<div id="dteModal" class="modal">
+<div id="dteModal" class="modal" role="dialog" aria-labelledby="dteModalTitle" aria-hidden="true">
     <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header">
-            <span class="close">×</span>
-            <h2>Dude, That's Erin's Blog</h2>
+            <span class="close" aria-label="Close dialog">&times;</span>
+            <h2 id="dteModalTitle">Dude, That's Erin's Blog</h2>
         </div>
         <div class="modal-body">
             <div style="width: 100%; margin: 0 auto; text-align: center;">
-                <img src="./assets/dte.png" class="img" />
+                <img src="./assets/dte.png" class="img" alt="Screenshot of Dude, That's Erin's Blog website" />
             </div>
             <p>
                 This is a <a href="https://wordpress.com/" target="_blank">WordPress</a> website I created as a blog where I share my thoughts on Productivity Applications and anything else. It is a hobby project.<br />
@@ -25,13 +25,11 @@
             </p>
         </div>
         <div class="modal-footer">
-            <span class="langs"><strong>Languages Used:</strong> CSS HTML PHP <a href="https://wordpress.com/" target="_blank">WordPress</a></span>
-            <br />
-            <strong>Find Dude, That's Erin Here:</strong>
-            <br />
-            <span class="links" style="padding-top: 8px">
-                <a href="https://dudethatserin.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" title="Visit DudeThatsErin.com"></i></a>
-            </span>
+            <p class="langs"><strong>Languages Used:</strong> CSS HTML PHP <a href="https://wordpress.com/" target="_blank">WordPress</a></p>
+            <p><strong>Find Dude, That's Erin Here:</strong></p>
+            <div class="links" style="padding-top: 8px">
+                <a href="https://dudethatserin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit the Dude, That's Erin website (opens in new tab)"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="Visit the Website"></i><span class="visually-hidden">Visit the Website</span></a>
+            </div>
         </div>
     </div>
 </div>

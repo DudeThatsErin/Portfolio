@@ -1,23 +1,23 @@
 <div class="dtm_feat" data-project-type="personal">
     <div class="body">
-        <span class="workTitle">Dude, That's Me!</span>
-        <span class="details">This is a website where users can sign up to pose as celebrities to share their...</span><br /><br />
-        <button class="modal-button" href="#dtmModal">
+        <h3 class="workTitle">Dude, That's Me!</h3>
+        <p class="details">This is a website where users can sign up to pose as celebrities to share their appreciation for characters or celebrities.</p>
+        <button class="modal-button" href="#dtmModal" aria-haspopup="dialog" aria-label="Read more about Dude, That's Me! project">
             Click here to read more...
         </button>
     </div>
 </div>
 
-<div id="dtmModal" class="modal">
+<div id="dtmModal" class="modal" role="dialog" aria-labelledby="dtmModalTitle" aria-hidden="true">
     <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header">
-            <span class="close">×</span>
-            <h2>Dude, That's Me!</h2>
+            <span class="close" aria-label="Close dialog">&times;</span>
+            <h2 id="dtmModalTitle">Dude, That's Me!</h2>
         </div>
         <div class="modal-body">
             <div style="width: 100%; margin: 0 auto; text-align: center;">
-                <img src="./assets/dtm.png" class="img" />
+                <img src="./assets/dtm.png" class="img" alt="Screenshot of Dude, That's Me! website" />
             </div>
             <p>
                 This is a website where users can sign up to pose as celebrities to share their appreciation for characters or celebrities. This was similar to <a href="https://thefanlistings.org/" target="_blank" title="click here to read what fanlistings are">Fanlistings</a> where users could create websites from scratch. Except they could just say that "I am the Captian Jack Sparrow of the WWW" or something similar.
@@ -28,13 +28,11 @@
             </p>
         </div>
         <div class="modal-footer">
-            <span class="langs"><strong>Languages Used:</strong> HTML CSS PHP MySQL</span>
-            <br />
-            <strong>View the Code Here:</strong>
-            <br />
-            <span class="links" style="padding-top: 8px">
-                <a href="https://dudethats.me" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </span>
+            <p class="langs"><strong>Languages Used:</strong> HTML CSS PHP MySQL</p>
+            <p><strong>View the Code Here:</strong></p>
+            <div class="links" style="padding-top: 8px">
+                <a href="https://dudethats.me" target="_blank" rel="noopener noreferrer" aria-label="View the Dude, That's Me! code (opens in new tab)"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="View the Code"></i><span class="visually-hidden">View the Code</span></a>
+            </div>
         </div>
     </div>
 </div>

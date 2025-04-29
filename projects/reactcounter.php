@@ -1,37 +1,35 @@
 <div class="reactCounter_feat" data-project-type="personal">
     <div class="body">
-        <span class="workTitle">Demo React Counter</span>
-        <span class="details">This project is a simple counter app developed using React and React Native Web, which allows users to...</span><br /><br />
-        <button class="modal-button" href="#reactCounterModal">
+        <h3 class="workTitle">React Counter App</h3>
+        <p class="details">This is a simple counter application built with React...</p>
+        <button class="modal-button" href="#reactCounterModal" aria-haspopup="dialog" aria-label="Read more about React Counter App project">
             Click here to read more...
         </button>
     </div>
 </div>
 
-<div id="reactCounterModal" class="modal">
+<div id="reactCounterModal" class="modal" role="dialog" aria-labelledby="reactCounterModalTitle" aria-hidden="true">
     <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header">
-            <span class="close">×</span>
-            <h2>Demo React Counter</h2>
+            <span class="close" aria-label="Close dialog">&times;</span>
+            <h2 id="reactCounterModalTitle">React Counter App</h2>
         </div>
         <div class="modal-body">
             <div style="width: 100%; margin: 0 auto; text-align: center;">
-                <img src="./assets/reactCounter.png" class="img" />
+                <img src="./assets/reactCounter.png" class="img" alt="Screenshot of React Counter App interface" />
             </div>
             <p>
-               This project is a simple counter app developed using React and React Native Web, which allows users to increment the counter by predefined values or reset it. It is designed to work on both mobile and web platforms. The app uses AsyncStorage to persist the counter value even after the page is reloaded.
+                This is a simple counter application built with React. The app allows users to increment, decrement, and reset a counter. It demonstrates React state management, component architecture, and responsive design principles. The app is fully responsive and works on both desktop and mobile devices.
             </p>
         </div>
         <div class="modal-footer">
-            <span class="langs"><strong>Languages Used:</strong> JavaScript TypeScript React React Native</span>
-            <br />
-            <strong>Find Demo React Counter Here:</strong>
-            <br />
-            <span class="links" style="padding-top: 8px">
-                <a href="https://erinskidds.com/reactcounter/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" title="Visit the Demo online"></i></a>
-                <a href="https://github.com/DudeThatsErin/ReactCounter" target="_blank"><i class="fa-brands fa-github" title="View the code"></i></a>
-            </span>
+            <p class="langs"><strong>Languages Used:</strong> JavaScript React HTML CSS</p>
+            <p><strong>Find React Counter App Here:</strong></p>
+            <div class="links" style="padding-top: 8px">
+                <a href="https://erinskidds.com/reactcounter/" target="_blank" rel="noopener noreferrer" aria-label="Try the React Counter App (opens in new tab)"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="Try the App!"></i><span class="visually-hidden">Try the App</span></a>
+                <a href="https://github.com/DudeThatsErin/react-counter" target="_blank" rel="noopener noreferrer" aria-label="View the React Counter App code on GitHub (opens in new tab)"><i class="fa-brands fa-github" aria-hidden="true" title="View the Code"></i><span class="visually-hidden">View the Code on GitHub</span></a>
+            </div>
         </div>
     </div>
 </div>

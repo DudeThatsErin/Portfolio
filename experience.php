@@ -1,12 +1,14 @@
 <?php include('./header.php'); ?>
-<div class="about-content">
-  <h2 class="numbered-heading">04. Some Things I've Built &amp; Worked On</h2>
-  <div class="filter-buttons">
-    <button class="filter-btn active" data-filter="all">All Projects</button>
-    <button class="filter-btn" data-filter="work">Work Projects</button>
-    <button class="filter-btn" data-filter="personal">Personal Projects</button>
+<main class="about-content" role="main" aria-labelledby="projects-heading">
+  <h2 id="projects-heading" class="numbered-heading">04. Some Things I've Built &amp; Worked On</h2>
+  
+  <div class="filter-buttons" role="tablist" aria-label="Filter projects by category">
+    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="projects-container" id="filter-all">All Projects</button>
+    <button class="filter-btn" data-filter="work" role="tab" aria-selected="false" aria-controls="projects-container" id="filter-work">Work Projects</button>
+    <button class="filter-btn" data-filter="personal" role="tab" aria-selected="false" aria-controls="projects-container" id="filter-personal">Personal Projects</button>
   </div>
-    <div class="featured">
+  
+  <div id="projects-container" class="featured" role="tabpanel" aria-labelledby="filter-all">
   <?php
   include('./projects/sasha.php');
   include('./projects/reactauth.php');
@@ -33,7 +35,7 @@
   include('./projects/dtm.php');
   include('./projects/hostwish.php');
   ?>
-</div>
+  </div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -42,23 +44,54 @@
 
     filterButtons.forEach(button => {
       button.addEventListener('click', () => {
-        // Remove active class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Add active class to clicked button
+        // Remove active class from all buttons and update ARIA attributes
+        filterButtons.forEach(btn => {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+        });
+        
+        // Add active class to clicked button and update ARIA attributes
         button.classList.add('active');
+        button.setAttribute('aria-selected', 'true');
+        
+        // Update the tabpanel's aria-labelledby attribute
+        document.getElementById('projects-container').setAttribute('aria-labelledby', button.id);
 
         const filterValue = button.getAttribute('data-filter');
 
+        // Show or hide projects based on filter
         projects.forEach(project => {
           if (filterValue === 'all' || project.getAttribute('data-project-type') === filterValue) {
-            project.classList.remove('hidden');
+            project.style.display = 'block';
           } else {
-            project.classList.add('hidden');
+            project.style.display = 'none';
           }
         });
       });
     });
+    
+    // Handle keyboard navigation for the tablist
+    filterButtons.forEach((button, index) => {
+      button.addEventListener('keydown', (e) => {
+        // Left/right arrow keys to navigate between tabs
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+          e.preventDefault();
+          
+          const direction = e.key === 'ArrowLeft' ? -1 : 1;
+          let newIndex = index + direction;
+          
+          // Handle wrapping around
+          if (newIndex < 0) newIndex = filterButtons.length - 1;
+          if (newIndex >= filterButtons.length) newIndex = 0;
+          
+          // Focus the new button and click it
+          filterButtons[newIndex].focus();
+          filterButtons[newIndex].click();
+        }
+      });
+    });
   });
 </script>
+</main>
 
 <?php include('./footer.php'); ?>
