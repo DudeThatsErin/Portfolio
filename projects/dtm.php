@@ -1,7 +1,7 @@
 <div class="dtm_feat" data-project-type="personal">
     <div class="body">
         <h3 class="workTitle">Dude, That's Me!</h3>
-        <p class="details">This is a website where users can sign up to pose as celebrities to share their appreciation for characters or celebrities.</p>
+        <p class="details">This is a website where users can sign up to pose as celebrities to share their appreciation...</p>
         <button class="modal-button" href="#dtmModal" aria-haspopup="dialog" aria-label="Read more about Dude, That's Me! project">
             Click here to read more...
         </button>

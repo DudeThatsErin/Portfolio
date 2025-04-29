@@ -1,7 +1,7 @@
 <div class="ai_feat" data-project-type="personal">
     <div class="body">
         <h3 class="workTitle">Sasha AI</h3>
-        <p class="details">This is an <strong>in progress</strong> AI I am creating using <a href="pytortch.org" target="_blank">PyTorch</a>.  The goal of this AI is to use Natural Language and Deep Learning Processes to store tasks, contacts, and more. It will also learn from responses that you provide it.</p>
+        <p class="details">This is an <strong>in progress</strong> AI I am creating using <a href="pytortch.org" target="_blank">PyTorch</a>...</p>
         <button class="modal-button" href="#aiModal" aria-haspopup="dialog" aria-label="Read more about Sasha AI project">
             Click here to read more...
         </button>

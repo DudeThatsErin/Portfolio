@@ -1,7 +1,7 @@
       <div class="csharps_feat" data-project-type="personal">
         <div class="body">
           <h3 class="workTitle">C# Mini-Games</h3>
-          <p class="details">While attempting to teach myself C#/C#.net I created several mini-games like tic-tac-toe and hangman to get myself to understand and learn the concepts of C#.</p>
+          <p class="details">While attempting to teach myself C#/C#.net...</p>
           <button class="modal-button" href="#csharpModal" aria-haspopup="dialog" aria-label="Read more about C# Mini-Games project">
             Click here to read more...
           </button>

@@ -1,7 +1,7 @@
 <div class="appseeker_feat" data-project-type="personal">
     <div class="body">
         <h3 class="workTitle">App Seeker</h3>
-        <p class="details">This is a website created using <a href="https://notion.so" title="Click here to learn about Notion" target="_blank">Notion</a>, <a href="https://cloudflare.com" target="_blank">CloudFlare</a> and <a href="https://github.com/velsa/notehost" target="_blank">NoteHost</a> where I go over different browsers, note taking applications, task management applications and other productivity tools. I also link to other reviews and posts people have written to give people a good resource to go to when deciding which productivity tools they would like to use for their day-to-day life.</p>
+        <p class="details">This is a website created using <a href="https://notion.so" title="Click here to learn about Notion" target="_blank">Notion</a>, <a href="https://cloudflare.com" target="_blank">CloudFlare</a> and <a href="https://github.com/velsa/notehost" target="_blank">NoteHost</a>...</p>
         <button class="modal-button" href="#appseekerModal" aria-haspopup="dialog" aria-label="Read more about App Seeker project">
             Click here to read more...
         </button>
