@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css?v3.4555555" media="all" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8" />
+  <meta name="description" content="Erin Skidds - Full-Stack Engineer specializing in front-end and back-end development, bot development, and language learning models">
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 
   <!-- GOOGLE FONTS -->
@@ -23,14 +24,15 @@
 </head>
 
 <body>
-  <header>
+  <a class="skip-to-content" href="#main-content">Skip to content</a>
+  <header role="banner">
     <div class="logo">
-      <a href="https://erinskidds.com/">&lt;ES&gt;</a>
+      <a href="https://erinskidds.com/" aria-label="Erin Skidds homepage">&lt;ES&gt;</a>
     </div>
-    <nav>
-      <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden" />
-      <label for="checkbox4">
-        <div class="hamburger hamburger4">
+    <nav role="navigation" aria-label="Main navigation">
+      <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden" aria-hidden="true" />
+      <label for="checkbox4" aria-label="Toggle navigation menu">
+        <div class="hamburger hamburger4" aria-hidden="true">
           <span class="bar bar1"></span>
           <span class="bar bar2"></span>
           <span class="bar bar3"></span>
@@ -47,13 +49,14 @@
       </div>
     </nav>
   </header>
-  <div class="left-sidebar">
+  <div class="left-sidebar" aria-label="Social links">
     <div class="bottom">
-      <a href="https://github.com/DudeThatsErin" target="_blank">
-        <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/DudeThatsErin" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
       </a>
-      <a href="https://linkedin.com/in/erinskidds" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i>
+      <a href="https://linkedin.com/in/erinskidds" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
       </a>
     </div>
   </div>
+  <div id="main-content">

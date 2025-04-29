@@ -24,6 +24,14 @@
           e.preventDefault();
           modal = document.querySelector(e.target.getAttribute("href"));
           modal.style.display = "block";
+          // Set focus to the first focusable element in the modal
+          const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+          if (focusableElements.length > 0) {
+            focusableElements[0].focus();
+          }
+          // Add ARIA attributes
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.classList.add('modal-open');
         };
       }
 
@@ -31,9 +39,13 @@
       for (var i = 0; i < spans.length; i++) {
         spans[i].onclick = function() {
           for (var index in modals) {
-            if (typeof modals[index].style !== "undefined")
+            if (typeof modals[index].style !== "undefined") {
               modals[index].style.display = "none";
+              // Update ARIA attributes
+              modals[index].setAttribute('aria-hidden', 'true');
+            }
           }
+          document.body.classList.remove('modal-open');
         };
       }
 
@@ -41,11 +53,29 @@
       window.onclick = function(event) {
         if (event.target.classList.contains("modal")) {
           for (var index in modals) {
-            if (typeof modals[index].style !== "undefined")
+            if (typeof modals[index].style !== "undefined") {
               modals[index].style.display = "none";
+              // Update ARIA attributes
+              modals[index].setAttribute('aria-hidden', 'true');
+            }
           }
+          document.body.classList.remove('modal-open');
         }
       };
+
+      // Handle keyboard accessibility for modals
+      document.addEventListener('keydown', function(e) {
+        // ESC key closes modal
+        if (e.key === 'Escape') {
+          for (var index in modals) {
+            if (typeof modals[index].style !== "undefined" && modals[index].style.display === "block") {
+              modals[index].style.display = "none";
+              modals[index].setAttribute('aria-hidden', 'true');
+              document.body.classList.remove('modal-open');
+            }
+          }
+        }
+      });
     </script>
     </body>
 

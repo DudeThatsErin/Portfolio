@@ -16,8 +16,12 @@
   --lightest-slate: #ccd6f6;
   --black: #010101;
   --accent-teal: #83d4c5;
+  --accent-teal-darker: #4db5a2; /* Darker version for better contrast */
   --bg-dark: #302f2f;
   --border-color: #6c6c6c;
+  --focus-outline: #ffbf47;
+  --error-red: #ff6b6b;
+  --success-green: #4caf50;
 
   /* Typography */
   --font-sans: "Oswald", sans-serif;
@@ -66,7 +70,7 @@ body, html {
   padding: 0;
   font-family: var(--font-mono);
   font-size: var(--fz-xl);
-  line-height: 1.2;
+  line-height: 1.5;
   text-decoration: none;
   text-transform: none;
   background: #000 url("./assets/bg_test.png") repeat-y;
@@ -87,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Links */
 a {
-  color: var(--celadon-blue);
+  color: var(--accent-teal);
   text-decoration: none;
   transition: var(--transition);
 }
@@ -98,6 +102,12 @@ a:hover {
   text-decoration-color: var(--white);
 }
 
+a:focus {
+  outline: 3px solid var(--focus-outline);
+  outline-offset: 2px;
+  text-decoration: underline;
+}
+
 .link a {
   font-weight: bolder;
   text-decoration: underline;
@@ -105,6 +115,23 @@ a:hover {
 
 .link a:hover {
   color: var(--darkest-indigo-dye);
+}
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--accent-teal);
+  color: var(--black);
+  padding: 8px;
+  z-index: 1002;
+  transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+  top: 0;
+  outline: 3px solid var(--focus-outline);
 }
 
 /* Layout Components */
@@ -161,6 +188,11 @@ nav button {
 nav button:hover {
   background-color: var(--accent-teal);
   color: var(--black);
+}
+
+nav button:focus {
+  outline: 3px solid var(--focus-outline);
+  outline-offset: 2px;
 }
 
 /* Hide hamburger menu on desktop */
@@ -360,12 +392,93 @@ textarea.contact_form {
   color: var(--black);
 }
 
+input.contact:focus,
+textarea.contact_form:focus {
+  outline: 3px solid var(--focus-outline);
+  border-color: var(--focus-outline);
+}
+
 textarea.contact_form {
   height: 150px;
 }
 
-.error { color: red; }
-.success { color: green; }
+.error { color: var(--error-red); font-weight: bold; }
+.success { color: var(--success-green); font-weight: bold; }
+
+/* Form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Accessibility improvements */
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/* Focus styles for interactive elements */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--focus-outline);
+  outline-offset: 2px;
+}
+
+/* Improve modal accessibility */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: relative;
+  background-color: var(--bg-dark);
+  color: var(--white);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--border-color);
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: animatetop 0.4s;
+}
+
+.close {
+  color: var(--white);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--accent-teal);
+  text-decoration: none;
+  cursor: pointer;
+  outline: 3px solid var(--focus-outline);
+}
+
+/* When modal is open, prevent scrolling the background */
+body.modal-open {
+  overflow: hidden;
+}
 
 /* Animations */
 @keyframes animatetop {
@@ -424,8 +537,8 @@ textarea.contact_form {
   .index-content,
   .about-content {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 1%;
     margin: 10% auto;
     padding: 20px;
     width: 90%;
