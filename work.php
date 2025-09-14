@@ -6,7 +6,7 @@
   <section class="second-section" aria-labelledby="payactiv-heading">
     <h3 id="payactiv-heading">Front End Software Engineer</h3>
     <p class="title">Payactiv</p>
-    <p class="date"><time datetime="2024">2024</time> – <time datetime="2025">Present</time></p>
+    <p class="date"><time datetime="2025">2025</time> – <time datetime="2025">Present</time></p>
     <ul>
       <li><strong>Co-architected Payactiv's monorepo React Native + Next.js app</strong> from the ground up, delivering a scalable and maintainable foundation using Radix and Base Web component libraries.</li>
       <li><strong>Primary stakeholder for iOS build management</strong>, leveraging Expo and EAS to ensure consistent mobile app delivery and streamlined App Store deployment processes.</li>
