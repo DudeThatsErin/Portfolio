@@ -3,7 +3,7 @@
   <h2 id="resume-heading" class="numbered-heading">06. Resume</h2>
   <div class="resume-container">
     <object
-      data="./assets/Erin_Skidds.pdf"
+      data="./assets/ErinSkiddsResume.pdf"
       type="application/pdf"
       width="100%"
       height="800px"
