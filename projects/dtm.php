@@ -29,10 +29,6 @@
         </div>
         <div class="modal-footer">
             <p class="langs"><strong>Languages Used:</strong> HTML CSS PHP MySQL</p>
-            <p><strong>View the Code Here:</strong></p>
-            <div class="links" style="padding-top: 8px">
-                <a href="https://dudethats.me" target="_blank" rel="noopener noreferrer" aria-label="View the Dude, That's Me! code (opens in new tab)"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="View the Code"></i><span class="visually-hidden">View the Code</span></a>
-            </div>
         </div>
     </div>
 </div>

@@ -4,7 +4,7 @@
   <h2 id="work-heading" class="numbered-heading">03. Where I've Worked</h2>
 
   <section class="second-section" aria-labelledby="payactiv-heading">
-    <h3 id="payactiv-heading">Front End Software Engineer</h3>
+    <h3 id="payactiv-heading">Full Stack Software Engineer</h3>
     <p class="title">Payactiv</p>
     <p class="date"><time datetime="2025">2025</time> – <time datetime="2025">Present</time></p>
     <ul>

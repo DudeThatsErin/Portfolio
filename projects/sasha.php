@@ -20,15 +20,14 @@
                 <img src="./assets/bot.png" class="img" alt="Illustration of an AI interface" />
             </div>
             <p>
-               This is an <strong>in progress</strong> AI I am creating using <a href="pytortch.org" target="_blank">PyTorch</a>.  The goal of this AI is to use Natural Language and Deep Learning Processes to store tasks, contacts, and more. It will also learn from responses that you provide it.
+               This is an <strong>in progress</strong> AI I am creating using <a href="pytortch.org" target="_blank">PyTorch</a>.  The goal of this AI is to use Natural Language and Deep Learning Processes to learn about me and to let interviewers and friends and family ask it questions to learn about me. I also plan to keep this up so my future children can use it to learn about their mother as sort of digital family heirloom that knows all about me.
             </p>
         </div>
         <div class="modal-footer">
             <p class="langs"><strong>Languages Used:</strong> Python <a href="pytortch.org" target="_blank">PyTorch</a></p>
             <p><strong>Find Sasha AI Here:</strong></p>
             <div class="links" style="padding-top: 8px">
-                <a href="https://gitlab.com/ErinSkidds/sasha" target="_blank" rel="noopener noreferrer" aria-label="View Sasha AI code on GitLab (opens in new tab)"><i class="fa-brands fa-gitlab" aria-hidden="true" title="View the Code"></i><span class="visually-hidden">View the Code on GitLab</span></a>
-                <a href="https://trello.com/b/dbZWvVJD/sasha" target="_blank" rel="noopener noreferrer" aria-label="View Sasha AI Trello board (opens in new tab)"><i class="fab fa-trello" aria-hidden="true" title="View the Trello Board"></i><span class="visually-hidden">View the Trello Board</span></a>
+                <a href="https://github.com/DudeThatsErin/sasha-ai" target="_blank" rel="noopener noreferrer" aria-label="View Sasha AI code on GitHub (opens in new tab)"><i class="fa-brands fa-github" aria-hidden="true" title="View the Code"></i><span class="visually-hidden">View the Code on GitHub</span></a>
             </div>
         </div>
     </div>
