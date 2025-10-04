@@ -460,6 +460,44 @@ textarea:focus {
   outline-offset: 2px;
 }
 
+/* Hamburger menu keyboard accessibility */
+.hamburger-label:focus {
+  outline: 3px solid var(--focus-outline);
+  outline-offset: 2px;
+  border-radius: var(--border-radius);
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Error message styling */
+.error-message {
+  color: var(--error-red);
+  font-size: var(--fz-xs);
+  margin-top: 0.25rem;
+  min-height: 1.2em;
+  display: block;
+}
+
+.error-message:empty {
+  display: none;
+}
+
+/* Enhanced focus for form elements with errors */
+input.contact[aria-invalid="true"]:focus,
+textarea.contact_form[aria-invalid="true"]:focus {
+  outline: 3px solid var(--error-red);
+  border-color: var(--error-red);
+}
+
+/* Skip link improvements */
+.skip-to-content:focus {
+  z-index: 10000;
+}
+
 /* Improve modal accessibility */
 .modal {
   display: none;

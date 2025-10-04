@@ -31,21 +31,22 @@
     </div>
     <nav role="navigation" aria-label="Main navigation">
       <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden" aria-hidden="true" />
-      <label for="checkbox4" aria-label="Toggle navigation menu">
+      <label for="checkbox4" class="hamburger-label" aria-label="Toggle navigation menu" tabindex="0" role="button" aria-expanded="false" aria-controls="main-menu">
         <div class="hamburger hamburger4" aria-hidden="true">
           <span class="bar bar1"></span>
           <span class="bar bar2"></span>
           <span class="bar bar3"></span>
           <span class="bar bar4"></span>
         </div>
+        <span class="visually-hidden">Menu</span>
       </label>
-      <div class="menu">
-        <a href="https://erinskidds.com/">01. Home</a>
-        <a href="about.php">02. About</a>
-        <a href="work.php">03. Work</a>
-        <a href="experience.php">04. Projects</a>
-        <a href="contact.php">05. Contact</a>
-        <a href="resume.php"><button>Resume</button></a>
+      <div class="menu" id="main-menu" role="menu">
+        <a href="https://erinskidds.com/" role="menuitem">01. Home</a>
+        <a href="about.php" role="menuitem">02. About</a>
+        <a href="work.php" role="menuitem">03. Work</a>
+        <a href="experience.php" role="menuitem">04. Projects</a>
+        <a href="contact.php" role="menuitem">05. Contact</a>
+        <a href="resume.php" role="menuitem"><button>Resume</button></a>
       </div>
     </nav>
   </header>

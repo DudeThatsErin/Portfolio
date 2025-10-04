@@ -19,14 +19,38 @@
     </div>
     <?php }?>
 
-<form action="" name="contactForm" id="contactForm" method="post" enctype="multipart/form-data" novalidate>
-        <input type="text" name="name" id="name" placeholder="Full Name*" id="name" class="contact" required><br />
-        <input type="email" name="email" id="email" placeholder="Your Email*" id="email" class="contact" required><br />
-        <input type="text" name="subject" id="subject" placeholder="Subject*" id="subject" class="contact" required><br />
-        <textarea rows="4" name="message" id="message" placeholder="Details*" class="contact_form" required></textarea>
+<form action="" name="contactForm" id="contactForm" method="post" enctype="multipart/form-data" novalidate aria-labelledby="contact-form-heading">
+        <h3 id="contact-form-heading" class="visually-hidden">Contact Form</h3>
+        
+        <div class="form-group">
+          <label for="name" class="visually-hidden">Full Name (required)</label>
+          <input type="text" name="name" id="name" placeholder="Full Name*" class="contact" required aria-required="true" aria-describedby="name-error">
+          <div id="name-error" class="error-message" role="alert" aria-live="polite"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="visually-hidden">Email Address (required)</label>
+          <input type="email" name="email" id="email" placeholder="Your Email*" class="contact" required aria-required="true" aria-describedby="email-error">
+          <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject" class="visually-hidden">Subject (required)</label>
+          <input type="text" name="subject" id="subject" placeholder="Subject*" class="contact" required aria-required="true" aria-describedby="subject-error">
+          <div id="subject-error" class="error-message" role="alert" aria-live="polite"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="message" class="visually-hidden">Message Details (required)</label>
+          <textarea rows="4" name="message" id="message" placeholder="Details*" class="contact_form" required aria-required="true" aria-describedby="message-error"></textarea>
+          <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
+        </div>
+        
         <!-- Google reCAPTCHA block -->
-        <div class="g-recaptcha" data-sitekey="6Lf2vV0jAAAAAJOU_TPDA9db_HPJibvXPwzUmw0w"></div>
-        <button type="submit" name="submit" class="contact">SEND MAIL</button>
+        <div class="g-recaptcha" data-sitekey="6Lf2vV0jAAAAAJOU_TPDA9db_HPJibvXPwzUmw0w" aria-label="Please complete the reCAPTCHA verification"></div>
+        
+        <button type="submit" name="submit" class="contact" aria-describedby="form-submit-help">SEND MAIL</button>
+        <div id="form-submit-help" class="visually-hidden">Press Enter or click to send your message</div>
     </form>
 <br />
 
