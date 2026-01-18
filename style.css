@@ -1198,3 +1198,118 @@ blockquote {
     height: 500px;
   }
 }
+
+/* Certificates Section */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certificate-card {
+  background: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.certificate-card:hover {
+  border-color: var(--accent-teal);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -15px rgba(131, 212, 197, 0.3);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cert-header h3 {
+  color: var(--lightest-slate);
+  font-size: var(--fz-xxl);
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+.cert-platform-badge {
+  background: var(--accent-teal);
+  color: var(--black);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius);
+  font-size: var(--fz-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cert-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cert-details p {
+  margin: 0;
+  color: var(--light-slate);
+  font-size: var(--fz-md);
+}
+
+.cert-instructor,
+.cert-date {
+  font-size: var(--fz-md);
+}
+
+.cert-description {
+  color: var(--gainsboro);
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.cert-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-teal);
+  font-size: var(--fz-md);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.cert-link:hover {
+  color: var(--white);
+}
+
+.cert-link i {
+  font-size: var(--fz-lg);
+}
+
+/* Certificates Responsive */
+@media screen and (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cert-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .cert-platform-badge {
+    align-self: flex-start;
+  }
+}
