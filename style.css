@@ -305,15 +305,16 @@ label[for="checkbox4"] {
 .reactTodo_feat { background-image: url("./assets/reacttodo.png"); }
 
 /* Section Styles */
-.first-section, .second-section, .third-section {
+.section {
   width: 600px;
   margin: var(--section-padding);
   padding: 2rem;
+  border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   background: var(--bg-dark);
 }
 
-.first-section ul, .second-section ul, .third-section ul {
+.section ul {
   margin-top: 1rem;
   padding-left: 2rem;
 }
@@ -580,9 +581,7 @@ body.modal-open {
     max-width: 85%;
   }
   
-  .first-section,
-  .second-section,
-  .third-section {
+  .section {
     width: 90%;
   }
   
@@ -712,19 +711,10 @@ body.modal-open {
   }
 
   /* Content */
-  .work,
-  .experience,
-  .contact-section {
+  .section {
     position: relative;
     left: 0;
     padding: 20px;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .first-section,
-  .second-section,
-  .third-section {
     width: 100%;
     margin: 1rem 0;
   }
@@ -813,9 +803,7 @@ body.modal-open {
     left: 0;
   }
 
-  .first-section,
-  .second-section,
-  .third-section {
+  .section {
     width: 100%;
     margin: 1rem 0;
   }
