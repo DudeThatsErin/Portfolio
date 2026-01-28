@@ -47,6 +47,7 @@
         <a href="experience.php" role="menuitem">04. Projects</a>
         <a href="contact.php" role="menuitem">05. Contact</a>
         <a href="resume.php" role="menuitem"><button>Resume</button></a>
+        <a href="certificates.php" role="menuitem">07. Certificates</a>
       </div>
     </nav>
   </header>
