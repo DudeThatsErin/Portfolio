@@ -7,7 +7,7 @@
         <section aria-labelledby="intro-heading">
           <h2 id="intro-heading" class="visually-hidden">Introduction</h2>
           <p>
-            Hello! My name is Erin and I enjoy creating interactive bots and things that live on the internet. My interest is in bots and applying language learning models to them. I started about 9 years ago by creating a discord bot for my CodingHelp discord server that I authored. I have since started teaching myself how to apply language learning models to bots that I have created for websites and discord.
+            Throughout my coding journey I have enjoyed creating bots/AI and things that live on the internet. I started about 9 years ago by creating a discord bot for my CodingHelp discord server that I authored. I have since started teaching myself how to apply language learning models to bots that I have created for websites and discord.
           </p>
         </section>
         
@@ -20,17 +20,17 @@
         
         <section aria-labelledby="technologies-heading">
           <h2 id="technologies-heading" class="visually-hidden">Technologies I Work With</h2>
-          <p>Here are a few technologies I've been working with recently:</p>
+          <p>Here are a few technologies I've been working with throughout my career:</p>
           <ul class="list" role="list" aria-label="Technologies and programming languages">
-            <li>JavaScript (Node.js, React, Angular, Vue), TypeScript (Angular)</li>
+            <li>JavaScript (Node.js, Next.js, Nuxt.js, React, Angular, Vue), TypeScript (Angular)</li>
             <li>C, C++, C#/C#.NET, Python</li>
             <li>HTML 5/CSS 3/SCSS/SASS</li>
             <li>CSS Animations</li>
             <li>SQL (MySQL, MSSQL, SQLite, MongoDB, NoSQL and PostGresSQL)</li>
             <li>WordPress &amp; WordPress Plugins</li>
             <li>PHP (Sage/Roots and more)</li>
-            <li>Python, PyTorch, Django</li>
-            <li>AWS, EC2, CodeBuild, CodeDeploy, API Gateway, CloudWatch, CloudFront, DynamoDB</li>
+            <li>Python, PyTorch, Django, Flask</li>
+            <li>AWS (EC2, CodeBuild, CodeDeploy, API Gateway, CloudWatch, CloudFront, DynamoDB)</li>
           </ul>
         </section>
 </main>

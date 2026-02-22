@@ -12,7 +12,7 @@
     <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header">
-            <span class="close" aria-label="Close dialog">&times;</span>
+            <button class="close" aria-label="Close dialog">&times;</button>
             <h2 id="cppModalTitle">Asteroids</h2>
         </div>
         <div class="modal-body">

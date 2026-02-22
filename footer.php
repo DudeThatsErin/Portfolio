@@ -249,6 +249,152 @@
         return emailRegex.test(email);
       }
     </script>
+
+    <!-- Sasha AI Widget -->
+    <div id="sasha-widget">
+      <div id="sasha-panel" role="dialog" aria-label="Chat with Sasha, Erin's AI" aria-modal="true" style="display:none">
+        <div class="sasha-header">
+          <div class="sasha-avatar" aria-hidden="true">S</div>
+          <div class="sasha-header-text"><strong>Sasha</strong></div>
+          <button id="sasha-close" class="sasha-close" aria-label="Close chat">&times;</button>
+        </div>
+        <div id="sasha-messages" class="sasha-messages" aria-live="polite" aria-label="Chat messages"></div>
+        <div class="sasha-input-row">
+          <input id="sasha-input" type="text" class="sasha-input" placeholder="Ask me anything&hellip;" aria-label="Message input" />
+          <button id="sasha-send" class="sasha-send" aria-label="Send message">&#8593;</button>
+        </div>
+        <p class="sasha-footer">
+          <a href="#" id="sasha-fullchat">Open full chat &rarr;</a>
+        </p>
+      </div>
+      <button id="sasha-bubble" class="sasha-bubble" aria-label="Chat with Sasha, Erin's AI" aria-expanded="false">&#x1F4AC;</button>
+    </div>
+
+    <script>
+    (function() {
+      // TODO: Update these variables to point to the production server
+      var SASHA_API = 'http://localhost:8000';
+      var SASHA_FRONTEND = 'http://localhost:3000';
+      var GREETING = "Hi! I'm Sasha, Erin's AI. Ask me anything about her \u2014 her work, projects, tech stack, or just say hi!";
+
+      var panel = document.getElementById('sasha-panel');
+      var bubble = document.getElementById('sasha-bubble');
+      var closeBtn = document.getElementById('sasha-close');
+      var messagesEl = document.getElementById('sasha-messages');
+      var inputEl = document.getElementById('sasha-input');
+      var sendBtn = document.getElementById('sasha-send');
+      var fullchatLink = document.getElementById('sasha-fullchat');
+
+      var messages = [];
+      var loading = false;
+      var chatId = localStorage.getItem('sasha_widget_chat_id');
+      if (!chatId) {
+        chatId = 'widget-' + Date.now();
+        localStorage.setItem('sasha_widget_chat_id', chatId);
+      }
+
+      // Restore messages
+      var stored = localStorage.getItem('sasha_widget_messages');
+      if (stored) {
+        try { messages = JSON.parse(stored); } catch(e) { messages = []; }
+      }
+      if (messages.length === 0) {
+        messages = [{ role: 'assistant', content: GREETING }];
+      }
+
+      function saveMessages() {
+        localStorage.setItem('sasha_widget_messages', JSON.stringify(messages));
+      }
+
+      function renderMessages() {
+        messagesEl.innerHTML = '';
+        messages.forEach(function(msg) {
+          var div = document.createElement('div');
+          div.className = 'sasha-msg ' + (msg.role === 'user' ? 'sasha-msg-user' : 'sasha-msg-bot');
+          div.textContent = msg.content;
+          if (msg.isOffline) {
+            var links = document.createElement('span');
+            links.className = 'sasha-offline-links';
+            links.innerHTML = ' <a href="https://linkedin.com/in/erinskidds" target="_blank" rel="noopener noreferrer">LinkedIn</a> &middot; <a href="https://github.com/DudeThatsErin" target="_blank" rel="noopener noreferrer">GitHub</a>';
+            div.appendChild(links);
+          }
+          messagesEl.appendChild(div);
+        });
+        if (loading) {
+          var thinking = document.createElement('div');
+          thinking.className = 'sasha-msg sasha-msg-bot sasha-thinking';
+          thinking.textContent = 'Thinking\u2026';
+          messagesEl.appendChild(thinking);
+        }
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+      }
+
+      function setOpen(open) {
+        panel.style.display = open ? 'flex' : 'none';
+        bubble.setAttribute('aria-expanded', open ? 'true' : 'false');
+        bubble.setAttribute('aria-label', open ? 'Close Sasha chat' : "Chat with Sasha, Erin's AI");
+        bubble.innerHTML = open ? '&times;' : '&#x1F4AC;';
+        if (open) {
+          renderMessages();
+          setTimeout(function() { inputEl.focus(); }, 50);
+        }
+      }
+
+      async function sendMessage() {
+        var text = inputEl.value.trim();
+        if (!text || loading) return;
+        inputEl.value = '';
+        messages.push({ role: 'user', content: text });
+        saveMessages();
+        loading = true;
+        renderMessages();
+
+        var history = messages.slice(1, -1).map(function(m) {
+          return { role: m.role, content: m.content };
+        });
+
+        try {
+          var res = await fetch(SASHA_API + '/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: text, chat_id: chatId, history: history })
+          });
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          var data = await res.json();
+          messages.push({ role: 'assistant', content: data.response });
+        } catch(e) {
+          messages.push({ role: 'assistant', content: "Sorry, I'm offline right now. You can reach Erin directly on:", isOffline: true });
+        }
+        loading = false;
+        saveMessages();
+        renderMessages();
+      }
+
+      bubble.addEventListener('click', function() {
+        var isOpen = panel.style.display !== 'none';
+        setOpen(!isOpen);
+      });
+
+      closeBtn.addEventListener('click', function() { setOpen(false); });
+
+      sendBtn.addEventListener('click', sendMessage);
+
+      inputEl.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+      });
+
+      fullchatLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open(SASHA_FRONTEND + '?import_chat=' + chatId, '_blank', 'noopener,noreferrer');
+      });
+
+      // Disable send when empty
+      inputEl.addEventListener('input', function() {
+        sendBtn.disabled = !inputEl.value.trim() || loading;
+      });
+      sendBtn.disabled = true;
+    })();
+    </script>
     </body>
 
     </html>

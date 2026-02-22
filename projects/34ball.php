@@ -13,7 +13,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <div class="modal-header">
-            <span class="close" aria-label="Close dialog">&times;</span>
+            <button class="close" aria-label="Close dialog">&times;</button>
             <h2 id="asModalTitle">3 & 4 Ball Internal Pages for Client Company</h2>
           </div>
           <div class="modal-body">
